@@ -9,16 +9,18 @@ jobs:
   deploy:
     name: Deploy
     runs-on: windows-latest
-    env:
-      URL: ${{ secrets.PROD_URL }}
-      LOGIN: ${{ secrets.PROD_LOGIN }}
-      PASSWORD: ${{ secrets.PROD_PASSWORD }}
     steps:
       - name: Check out code
         uses: actions/checkout@v3
+      - name: Build repository before push
+        shell: powershell
+        run: |
+          cd .\.solution
+          dotnet build --configuration Release --no-incremental -noWarn:CS1998,MSB3061,MSB3245  --framework net472;
+          dotnet build-server shutdown
       - name: Push to destination
         uses: ./.github/actions/clio-pushw
         with: 
-          url: $URL
-          login: $LOGIN
-          password: $PASSWORD
+          url: ${{ secrets.PROD_URL }}
+          login: ${{ secrets.PROD_LOGIN }}
+          password: ${{ secrets.PROD_PASSWORD }}

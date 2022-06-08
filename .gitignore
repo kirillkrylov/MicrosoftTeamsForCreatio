@@ -1,1 +1,5 @@
 ClioTool
+MicrosoftTeams.Tests/bin
+MicrosoftTeams.Tests/obj
+packages/MicrosoftTeams/Files/Bin
+packages/MicrosoftTeams/Files/obj
