@@ -1,0 +1,7 @@
+name: 'Install Clio'
+description: 'Install latest version of Clio'
+runs: 
+  using: "composite"
+  steps:
+    - run: dotnet tool install clio --tool-path $rootDir\ClioTool;
+      shell: powershell
