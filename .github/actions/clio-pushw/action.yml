@@ -1,6 +1,9 @@
-name: 'Clio push workspace'
+name: 'Clio install'
 description: 'Push package to target'
 inputs:
+  folder: 
+    description: 'Folder to install'
+    required: true
   url:
     description: 'Destination url'
     required: true
@@ -17,9 +20,5 @@ runs:
   steps:
     - run: dotnet tool install clio --tool-path .\ClioTool;
       shell: powershell
-    - run: .\ClioTool\clio.exe pushw -u ${{ inputs.url }} -l ${{ inputs.login }} -p ${{ inputs.password }};
-      shell: powershell
-    - run: .\ClioTool\clio.exe flushdb -u ${{ inputs.url }} -l ${{ inputs.login }} -p ${{ inputs.password }};
-      shell: powershell
-    - run: .\ClioTool\clio.exe restart -u ${{ inputs.url }} -l ${{ inputs.login }} -p ${{ inputs.password }};
+    - run: .\ClioTool\clio.exe install ${{ inputs.folder }} -u ${{ inputs.url }} -l ${{ inputs.login }} -p ${{ inputs.password }};
       shell: powershell

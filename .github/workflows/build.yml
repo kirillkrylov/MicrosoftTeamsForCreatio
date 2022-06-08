@@ -66,6 +66,7 @@ jobs:
           .\..\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
   deploy:
     name: Deploy
+    needs: build
     runs-on: windows-latest
     steps:
       - name: Check out code
@@ -78,7 +79,8 @@ jobs:
           dotnet build-server shutdown;
       - name: Push to destination
         uses: ./.github/actions/clio-pushw
-        with: 
+        with:
+          folder: DemoPipeline 
           url: ${{ secrets.PROD_URL }}
           login: ${{ secrets.PROD_LOGIN }}
           password: ${{ secrets.PROD_PASSWORD }}
