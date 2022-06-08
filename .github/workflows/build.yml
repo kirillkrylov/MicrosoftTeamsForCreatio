@@ -10,11 +10,11 @@ jobs:
     name: Build
     runs-on: windows-latest
     steps:
-      env: 
-        PROD_URL: ${{ secrets.PROD_URL }}
-        PROD_LOGIN: ${{ secrets.PROD_LOGIN }}
-        PROD_PASSWORD: ${{ secrets.PROD_PASSWORD }}
       - uses: ./.github/actions/clio-pushw
+        env: 
+          PROD_URL: ${{ secrets.PROD_URL }}
+          PROD_LOGIN: ${{ secrets.PROD_LOGIN }}
+          PROD_PASSWORD: ${{ secrets.PROD_PASSWORD }}
         with: 
           url: $PROD_URL
           login: $PROD_LOGIN
