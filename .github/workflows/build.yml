@@ -46,6 +46,7 @@ jobs:
           dotnet test `
             /p:CollectCoverage=true /p:CoverletOutputFormat=opencover `
             /p:CoverletOutput="..\TestResults\coverage.opencover.xml";
+          cd ..;
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
