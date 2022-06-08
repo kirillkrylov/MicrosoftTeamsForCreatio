@@ -9,10 +9,14 @@ jobs:
   deploy:
     name: Deploy
     runs-on: windows-latest
+    env:
+      URL: ${{ secrets.PROD_URL }}
+      LOGIN: ${{ secrets.PROD_LOGIN }}
+      PASSWORD: ${{ secrets.PROD_PASSWORD }}
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/clio-pushw
         with: 
-          url: ${{ secrets.PROD_URL }}
-          login: ${{ secrets.PROD_LOGIN }}
-          password: ${{ secrets.PROD_PASSWORD }}
+          url: $URL
+          login: $LOGIN
+          password: $PASSWORD
