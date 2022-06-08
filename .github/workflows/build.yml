@@ -64,3 +64,19 @@ jobs:
             /d:sonar.cs.opencover.reportsPaths=".\..\TestResults\**\coverage.opencover*.xml";
           dotnet build;
           .\..\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+  deploy:
+    name: Deploy to production
+    need: build
+    runs-on: windows-latest
+    steps:
+      - name: clio push workspace
+        env: 
+          PROD_URL: ${{ secrets.PROD_URL }}
+          PROD_LOGIN: ${{ secrets.PROD_LOGIN }}
+          PROD_PASSWORD: ${{ secrets.PROD_PASSWORD }}
+        shell: powershell
+        run: |
+          dotnet tool install clio --tool-path .;
+          clio pushw -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
+          clio flushdb -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
+          clio restart -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
