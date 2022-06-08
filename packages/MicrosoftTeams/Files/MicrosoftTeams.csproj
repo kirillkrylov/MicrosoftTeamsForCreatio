@@ -17,11 +17,6 @@
 		<NoWarn>CS1522,CS0162</NoWarn>
 	</PropertyGroup>
 	<ItemGroup>
-		<SonarQubeSetting Include="sonar.coverage.exclusions">
-			<Value>**/Files/Documentation/**/*.*,**/EventListener/*.cs </Value>
-		</SonarQubeSetting>
-	</ItemGroup>
-	<ItemGroup>
 		<AssemblyAttribute Include="Terrasoft.Core.Attributes.PackageReferenceAssemblyAttribute">
 			<_Parameter1>All</_Parameter1>
 		</AssemblyAttribute>
@@ -54,7 +49,6 @@
 	</Choose>
 	<PropertyGroup>
 		<OutputPath>$(RelativeCurrentPkgFolderPath)$(StandalonePackageAssemblyPath)</OutputPath>
-		<CodeAnalysisRuleSet>..\..\..\.clio\.sonarlint\microsoftteamscsharp.ruleset</CodeAnalysisRuleSet>
 	</PropertyGroup>
 	<ItemGroup>
 		<Compile Include="$(RelativeCurrentPkgFolderPath)Schemas/**/*.cs" Condition="'$(RelativeCurrentPkgFolderPath)' != ''" />
@@ -120,9 +114,6 @@
 			</ItemGroup>
 		</When>
 	</Choose>
-	<ItemGroup>
-		<AdditionalFiles Include="..\..\..\.clio\.sonarlint\microsoftteams\CSharp\SonarLint.xml" Link="SonarLint.xml" />
-	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Common.Logging" Version="3.4.1" />
 		<PackageReference Include="CreatioSDK" Version="8.0.1.1990" />
