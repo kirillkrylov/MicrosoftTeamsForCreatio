@@ -69,6 +69,9 @@ jobs:
     needs: build
     runs-on: windows-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       - name: clio push workspace
         env: 
           PROD_URL: ${{ secrets.PROD_URL }}
@@ -76,9 +79,8 @@ jobs:
           PROD_PASSWORD: ${{ secrets.PROD_PASSWORD }}
         shell: powershell
         run: |
-          dotnet tool install clio --tool-path .;
-          ls;
-          cd ..;
-          .\clio.exe push-workspace clio pushw -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
-          .\clio.exe flushdb -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
-          .\clio.exe restart -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
+          $rootDir = Get-Location;
+          dotnet tool install clio --tool-path $rootDir\ClioTool
+          .\ClioTool\clio.exe push-workspace clio pushw -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
+          .\ClioTool\clio.exe -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
+          .\ClioTool\clio.exe -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
