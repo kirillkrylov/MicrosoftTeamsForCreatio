@@ -147,6 +147,4 @@ C:\TechTalk-Public\packages\MicrosoftTeams\Files\obj\Debug\MicrosoftTeams.Assemb
 C:\TechTalk-Public\packages\MicrosoftTeams\Files\obj\Debug\MicrosoftTeams.csproj.CoreCompileInputs.cache
 C:\TechTalk-Public\packages\MicrosoftTeams\Files\obj\Debug\MicrosoftTeams.dll
 C:\TechTalk-Public\packages\MicrosoftTeams\Files\obj\Debug\MicrosoftTeams.pdb
-C:\TechTalk-Public\packages\MicrosoftTeams\Files\Bin\netstandard\MicrosoftTeams.deps.json
-C:\TechTalk-Public\packages\MicrosoftTeams\Files\Bin\netstandard\MicrosoftTeams.dll
-C:\TechTalk-Public\packages\MicrosoftTeams\Files\Bin\netstandard\MicrosoftTeams.pdb
+C:\TechTalk-Public\packages\MicrosoftTeams\Files\obj\Debug\MicrosoftTeams.csproj.CopyComplete
