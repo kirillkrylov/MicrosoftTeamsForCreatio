@@ -17,11 +17,11 @@ runs:
   steps:
     - run: dotnet tool install clio --tool-path .\ClioTool;
       shell: powershell
-    - run: Write-Host "Attempting to install push to " ${{ inputs.url }}
+    - run: ls;
       shell: powershell
-    - run: .\ClioTool\clio.exe pushw -u ${{ inputs.url }} -l ${{ inputs.login }} l ${{ inputs.password }}
+    - run: .\ClioTool\clio.exe pushw -u ${{ inputs.url }} -l ${{ inputs.login }} l ${{ inputs.password }};
       shell: powershell
-    - run: .\ClioTool\clio.exe flushdb -u ${{ inputs.url }} -l ${{ inputs.login }} l ${{ inputs.password }}
+    - run: .\ClioTool\clio.exe flushdb -u ${{ inputs.url }} -l ${{ inputs.login }} l ${{ inputs.password }};
       shell: powershell
-    - run: .\ClioTool\clio.exe restart -u ${{ inputs.url }} -l ${{ inputs.login }} l ${{ inputs.password }}
+    - run: .\ClioTool\clio.exe restart -u ${{ inputs.url }} -l ${{ inputs.login }} l ${{ inputs.password }};
       shell: powershell
