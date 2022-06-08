@@ -1,0 +1,14 @@
+steps:
+  - name: Install Latest CLIO
+    shell: powershell
+    run: |
+      $rootDir = Get-Location;
+      dotnet tool install clio --tool-path $rootDir\ClioTool;
+  - name: Push workspace with CLIO
+    env: 
+      PROD_URL: ${{ secrets.PROD_URL }}
+      PROD_LOGIN: ${{ secrets.PROD_LOGIN }}
+      PROD_PASSWORD: ${{ secrets.PROD_PASSWORD }}
+    shell: powershell
+    run: |
+      .\ClioTool\clio.exe push-workspace -u PROD_URL -l PROD_LOGIN -p PROD_PASSWORD;
