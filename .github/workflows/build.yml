@@ -17,6 +17,6 @@ jobs:
           PROD_LOGIN: ${{ secrets.PROD_LOGIN }}
           PROD_PASSWORD: ${{ secrets.PROD_PASSWORD }}
         with: 
-          url: $PROD_URL
-          login: $PROD_LOGIN
-          password: $PROD_PASSWORD
+          url: PROD_URL
+          login: PROD_LOGIN
+          password: PROD_PASSWORD
