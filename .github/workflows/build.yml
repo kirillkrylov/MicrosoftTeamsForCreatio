@@ -14,8 +14,10 @@ jobs:
       LOGIN: ${{ secrets.PROD_LOGIN }}
       PASSWORD: ${{ secrets.PROD_PASSWORD }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: ./.github/actions/clio-pushw
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Push to destination
+        uses: ./.github/actions/clio-pushw
         with: 
           url: $URL
           login: $LOGIN
