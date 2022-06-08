@@ -10,4 +10,4 @@ jobs:
     name: Build
     runs-on: windows-latest
     steps:
-      - uses: actions/install-clio
+      - uses: actions/install-clio@v1
