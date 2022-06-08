@@ -10,4 +10,12 @@ jobs:
     name: Build
     runs-on: windows-latest
     steps:
-      - uses: actions/install-clio@v1
+      env: 
+          PROD_URL: ${{ secrets.PROD_URL }}
+          PROD_LOGIN: ${{ secrets.PROD_LOGIN }}
+          PROD_PASSWORD: ${{ secrets.PROD_PASSWORD }}
+      - uses: ./.github/actions/clio-pushw
+        with: 
+          url: $PROD_URL
+          login: $PROD_LOGIN
+          password: $PROD_PASSWORD

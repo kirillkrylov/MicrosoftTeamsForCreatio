@@ -1,0 +1,27 @@
+name: 'Clio push workspace'
+description: 'Push package to target'
+inputs:
+  url:
+    description: 'Destination url'
+    required: true
+  login:
+    description: 'Destination username'
+    required: true
+    default: 'Supervisor'
+  password:
+    description: 'Destination password'
+    required: true
+    default: 'Supervisor'
+runs: 
+  using: "composite"
+  steps:
+    - run: dotnet tool install clio --tool-path $rootDir\ClioTool;
+      shell: powershell
+    - run: Write-Host "Attempting to install push to " ${{ inputs.url }}
+      shell: powershell
+    - run: .\ClioTool\clio.exe pushw -u ${{ inputs.url }} -l ${{ inputs.login }} l ${{ inputs.password }}
+      shell: powershell
+    - run: .\ClioTool\clio.exe flushdb -u ${{ inputs.url }} -l ${{ inputs.login }} l ${{ inputs.password }}
+      shell: powershell
+    - run: .\ClioTool\clio.exe restart -u ${{ inputs.url }} -l ${{ inputs.login }} l ${{ inputs.password }}
+      shell: powershell
