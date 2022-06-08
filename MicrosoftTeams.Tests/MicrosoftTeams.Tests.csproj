@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="coverlet.msbuild" Version="3.1.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+
+		<!--Required for coverlet.msbuild-->
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+
+		<PackageReference Include="CreatioMock" Version="8.0.1.1990" />
+		<PackageReference Include="CreatioSDK" Version="8.0.1.1990" />
+		<PackageReference Include="CreatioTestFramework" Version="8.0.1.1990" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.6" />
+		<PackageReference Include="System.Collections.Immutable" Version="1.3.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="ServiceStack.Interfaces">
+		  <HintPath>libs\ServiceStack.Interfaces.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Web" />
+		<ProjectReference Include="..\packages\MicrosoftTeams\Files\MicrosoftTeams.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Terrasoft.Security.Secrets">
+	    <HintPath>libs\Terrasoft.Security.Secrets.dll</HintPath>
+	    <Private>True</Private>
+	  </Reference>
+	</ItemGroup>
+
+</Project>

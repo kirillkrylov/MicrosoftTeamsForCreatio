@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = MicrosoftTeams.Tests
+build_property.ProjectDir = C:\TechTalk-Public\MicrosoftTeams.Tests\

@@ -1,0 +1,162 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\TechTalk-Public\\MicrosoftTeams.Tests\\MicrosoftTeams.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\TechTalk-Public\\MicrosoftTeams.Tests\\MicrosoftTeams.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TechTalk-Public\\MicrosoftTeams.Tests\\MicrosoftTeams.Tests.csproj",
+        "projectName": "MicrosoftTeams.Tests",
+        "projectPath": "C:\\TechTalk-Public\\MicrosoftTeams.Tests\\MicrosoftTeams.Tests.csproj",
+        "packagesPath": "C:\\Users\\k.krylov.TSCRM\\.nuget\\packages\\",
+        "outputPath": "C:\\TechTalk-Public\\MicrosoftTeams.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\k.krylov.TSCRM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ts1-infr-nexus.bpmonline.com:8443/repository/nuget-marketplace/": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\TechTalk-Public\\packages\\MicrosoftTeams\\Files\\MicrosoftTeams.csproj": {
+                "projectPath": "C:\\TechTalk-Public\\packages\\MicrosoftTeams\\Files\\MicrosoftTeams.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "CreatioMock": {
+              "target": "Package",
+              "version": "[8.0.1.1990, )"
+            },
+            "CreatioSDK": {
+              "target": "Package",
+              "version": "[8.0.1.1990, )"
+            },
+            "CreatioTestFramework": {
+              "target": "Package",
+              "version": "[8.0.1.1990, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            },
+            "coverlet.msbuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\TechTalk-Public\\packages\\MicrosoftTeams\\Files\\MicrosoftTeams.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TechTalk-Public\\packages\\MicrosoftTeams\\Files\\MicrosoftTeams.csproj",
+        "projectName": "MicrosoftTeams",
+        "projectPath": "C:\\TechTalk-Public\\packages\\MicrosoftTeams\\Files\\MicrosoftTeams.csproj",
+        "packagesPath": "C:\\Users\\k.krylov.TSCRM\\.nuget\\packages\\",
+        "outputPath": "C:\\TechTalk-Public\\packages\\MicrosoftTeams\\Files\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\k.krylov.TSCRM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ts1-infr-nexus.bpmonline.com:8443/repository/nuget-marketplace/": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Common.Logging": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "CreatioSDK": {
+              "target": "Package",
+              "version": "[8.0.1.1990, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[4.29.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
