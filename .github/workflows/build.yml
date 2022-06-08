@@ -77,6 +77,6 @@ jobs:
         shell: powershell
         run: |
           dotnet tool install clio --tool-path .;
-          clio pushw -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
-          clio flushdb -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
-          clio restart -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
+          .\clio.exe push-workspace clio pushw -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
+          .\clio.exe flushdb -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
+          .\clio.exe restart -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
