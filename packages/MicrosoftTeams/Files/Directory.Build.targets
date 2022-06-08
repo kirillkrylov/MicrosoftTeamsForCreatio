@@ -1,0 +1,19 @@
+<Project>
+	<ItemGroup Condition="'$(PkgPath)' != ''">
+		<Compile Remove="$(PkgPath)/MicrosoftTeams/Assemblies/**" />
+		<Compile Remove="$(PkgPath)/MicrosoftTeams/Data/**" />
+		<Compile Remove="$(PkgPath)/MicrosoftTeams/SqlScripts/**" />
+		<Compile Remove="$(PkgPath)/MicrosoftTeams/Schemas\**" />
+		<Compile Remove="$(PkgPath)/MicrosoftTeams/Resources/**" />
+		<EmbeddedResource Remove="$(PkgPath)/MicrosoftTeams/Assemblies/**" />
+		<EmbeddedResource Remove="$(PkgPath)/MicrosoftTeams/Data/**" />
+		<EmbeddedResource Remove="$(PkgPath)/MicrosoftTeams/SqlScripts/**" />
+		<EmbeddedResource Remove="$(PkgPath)/MicrosoftTeams/Schemas/**" />
+		<EmbeddedResource Remove="$(PkgPath)/MicrosoftTeams/Resources/**" />
+		<None Remove="$(PkgPath)/MicrosoftTeams/Assemblies/**" />
+		<None Remove="$(PkgPath)/MicrosoftTeams/Data/**" />
+		<None Remove="$(PkgPath)/MicrosoftTeams/SqlScripts/**" />
+		<None Remove="$(PkgPath)/MicrosoftTeams/Schemas/**" />
+		<None Remove="$(PkgPath)/MicrosoftTeams/Resources/**" />
+  </ItemGroup>
+</Project>

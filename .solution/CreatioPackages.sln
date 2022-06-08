@@ -1,0 +1,15 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{32518bed-c1fc-4573-9ea1-b690eeecd9fb}") = "MicrosoftTeams", "..\packages\MicrosoftTeams\Files\MicrosoftTeams.csproj", "{522c77cf-5eef-406b-a62d-5db9b4926e5d}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+			{522c77cf-5eef-406b-a62d-5db9b4926e5d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+			{522c77cf-5eef-406b-a62d-5db9b4926e5d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+			{522c77cf-5eef-406b-a62d-5db9b4926e5d}.Release|Any CPU.ActiveCfg = Release|Any CPU
+			{522c77cf-5eef-406b-a62d-5db9b4926e5d}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

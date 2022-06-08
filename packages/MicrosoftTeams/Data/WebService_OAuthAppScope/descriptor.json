@@ -1,0 +1,35 @@
+﻿{
+  "Descriptor": {
+    "UId": "320ab28d-f05c-4aae-af40-2e2cf2a7ccc7",
+    "Name": "WebService_OAuthAppScope",
+    "ModifiedOnUtc": "\/Date(1654433130000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "183ac595-fa6c-4b64-932c-7008ff739923",
+      "Name": "OAuthAppScope"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "d6994fc3-772f-4f48-9e65-62d864f72610",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Scope",
+        "DataTypeValueUId": "8b3f29bb-ea14-4ce5-a5c5-293a929b6ba2"
+      },
+      {
+        "ColumnUId": "7b3cf478-bbd0-49f7-88a7-579296db059c",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "OAuth20App",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      }
+    ]
+  }
+}

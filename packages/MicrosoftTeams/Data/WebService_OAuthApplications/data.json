@@ -1,0 +1,49 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "f7f273d2-680a-45d1-b6e5-fbe2e55698aa"
+        },
+        {
+          "SchemaColumnUId": "114f5ac1-7326-48e5-a92f-c7cdccc873c1",
+          "Value": "https://login.microsoftonline.com"
+        },
+        {
+          "SchemaColumnUId": "32329b4a-92b9-4af5-9b45-d2813b24528f",
+          "Value": "https://login.microsoftonline.com"
+        },
+        {
+          "SchemaColumnUId": "3724e6cd-8fb6-42bb-b0f6-e77ebc33c7de",
+          "Value": 2
+        },
+        {
+          "SchemaColumnUId": "42911b99-fe17-40a7-a9a2-c3e3331c76cf",
+          "Value": "https://login.microsoftonline.com"
+        },
+        {
+          "SchemaColumnUId": "636dcd5b-1bab-49e8-8f58-f1a3c9751525",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "7765873b-eeb6-4764-833e-75aa88f9dfd5",
+          "Value": "11684749-bac7-4c15-9552-ea9f5f685949",
+          "DisplayValue": "Graph_API_logo.png"
+        },
+        {
+          "SchemaColumnUId": "d849f752-56b3-483b-bc33-f51789c20a4c",
+          "Value": true
+        },
+        {
+          "SchemaColumnUId": "f7effb5b-0eb5-48c2-8357-7c0f833fbbbe",
+          "Value": "Microsoft Graph"
+        },
+        {
+          "SchemaColumnUId": "ff56ff05-b1c4-4cca-bb1c-b1e88ce1fb36",
+          "Value": ""
+        }
+      ]
+    }
+  ]
+}

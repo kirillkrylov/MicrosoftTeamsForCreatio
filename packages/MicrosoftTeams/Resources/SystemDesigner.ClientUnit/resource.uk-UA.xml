@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="uk-UA">
+	<Group Type="String">
+		<Items>
+			<Item Name="LocalizableStrings.ChatSettingsCaption.Value" Value="Налаштування чатів" />
+			<Item Name="LocalizableStrings.DuplicatesSettingsLinkCaption.Value" Value="Правила пошуку дублів" />
+			<Item Name="LocalizableStrings.ExtAccessSectionCaption.Value" Value="Доступ зовнішніх програм" />
+			<Item Name="LocalizableStrings.FileImportLinkCaption.Value" Value="Імпорт даних" />
+			<Item Name="LocalizableStrings.InstallBonusInSalesCaption.Value" Value="Установка пакета &quot;Система мотивації&quot;" />
+			<Item Name="LocalizableStrings.InstallPackageSuccess.Value" Value="Встановлення пакету завершено успішно" />
+			<Item Name="LocalizableStrings.LanguageSectionCaption.Value" Value="Мови" />
+			<Item Name="LocalizableStrings.LdapLinkCaption.Value" Value="Налаштування інтеграції з LDAP" />
+			<Item Name="LocalizableStrings.MandrillSettingsLinkCaption.Value" Value="Налаштування інтеграції з Mandrill" />
+			<Item Name="LocalizableStrings.MLModelSectionCaption.Value" Value="Моделі машинного навчання" />
+			<Item Name="LocalizableStrings.OAuthSectionCaption.Value" Value="Інтеграції з OAuth 2.0 авторизацією" />
+			<Item Name="LocalizableStrings.OpenBulkEmailEventLogCaption.Value" Value="Журнал відправки email-розсилок" />
+			<Item Name="LocalizableStrings.PortalFunctionalRolesLinkCaption.Value" Value="Функціональні ролі на порталі" />
+			<Item Name="LocalizableStrings.PortalMainPageManagementLinkCaption.Value" Value="Налаштування головної сторінки порталу" />
+			<Item Name="LocalizableStrings.PortalOrganizationalRolesLinkCaption.Value" Value="Організаційні ролі на порталі" />
+			<Item Name="LocalizableStrings.PortalOrganizationSetupLinkCaption.Value" Value="Налаштування сторінки профілю організації" />
+			<Item Name="LocalizableStrings.PortalSetupCaption.Value" Value="Налаштування порталу" />
+			<Item Name="LocalizableStrings.PortalUsersLinkCaption.Value" Value="Користувачі порталу" />
+			<Item Name="LocalizableStrings.ScoringModelCaption.Value" Value="Скорингові моделі" />
+			<Item Name="LocalizableStrings.SiteEventTypeCaption.Value" Value="Налаштування трекінгу подій сайту" />
+			<Item Name="LocalizableStrings.SocialLeadGenLinkCaption.Value" Value="Налаштування сервісу лідогеніраціі соціальних мереж" />
+			<Item Name="LocalizableStrings.SspProfileContactSetupLinkCaption.Value" Value="Налаштування сторінки профілю користувача порталу" />
+			<Item Name="LocalizableStrings.TrackingSettingsLinkCaption.Value" Value="Налаштування сервіса трекінга подій" />
+			<Item Name="LocalizableStrings.TranslationSectionCaption.Value" Value="Переклади" />
+			<Item Name="LocalizableStrings.UpdateBonusInSalesCaption.Value" Value="Оновлення пакета &quot;Система мотивації&quot;" />
+			<Item Name="LocalizableStrings.UseOldOpportunityManagementProcess.Value" Value="Не застосовувати процес корпоративних продажів 7.8" />
+			<Item Name="LocalizableStrings.UseOpportunityManagementProcess780.Value" Value="Використовувати процес корпоративних продажів 7.8" />
+			<Item Name="LocalizableStrings.WebFormsLinkCaption.Value" Value="Цільові сторінки" />
+			<Item Name="LocalizableStrings.WebServicesCaption.Value" Value="Налаштування інтеграції з веб-сервісами" />
+		</Items>
+	</Group>
+</Resources>

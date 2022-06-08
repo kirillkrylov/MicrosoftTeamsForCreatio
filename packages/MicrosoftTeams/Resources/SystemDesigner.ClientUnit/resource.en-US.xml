@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Images.eeef5b1f-86dd-e879-54b1-f322691ddbb5.Caption" Value="MsTeamsIcon" />
+			<Item Name="LocalizableStrings.ChatSettingsCaption.Value" Value="Chat settings" />
+			<Item Name="LocalizableStrings.DuplicatesSettingsLinkCaption.Value" Value="Setup duplicates rules" />
+			<Item Name="LocalizableStrings.ExtAccessSectionCaption.Value" Value="External access" />
+			<Item Name="LocalizableStrings.FileImportLinkCaption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.InstallBonusInSalesCaption.Value" Value="&quot;Compensation&quot; package installation" />
+			<Item Name="LocalizableStrings.InstallPackageSuccess.Value" Value="Package successfully installed" />
+			<Item Name="LocalizableStrings.LanguageSectionCaption.Value" Value="Languages" />
+			<Item Name="LocalizableStrings.LdapLinkCaption.Value" Value="LDAP integration setup" />
+			<Item Name="LocalizableStrings.MandrillSettingsLinkCaption.Value" Value="Mandrill integration setup" />
+			<Item Name="LocalizableStrings.MLModelSectionCaption.Value" Value="ML models" />
+			<Item Name="LocalizableStrings.MsTeamsConnectorCaption.Value" Value="Connect to Microsft Teams" />
+			<Item Name="LocalizableStrings.OAuthSectionCaption.Value" Value="OAuth 2.0 integrated applications" />
+			<Item Name="LocalizableStrings.OpenBulkEmailEventLogCaption.Value" Value="Mailing log" />
+			<Item Name="LocalizableStrings.PortalFunctionalRolesLinkCaption.Value" Value="Portal functional roles" />
+			<Item Name="LocalizableStrings.PortalMainPageManagementLinkCaption.Value" Value="Set up portal main page" />
+			<Item Name="LocalizableStrings.PortalOrganizationalRolesLinkCaption.Value" Value="Portal organizational roles" />
+			<Item Name="LocalizableStrings.PortalOrganizationSetupLinkCaption.Value" Value="Set up portal organization page" />
+			<Item Name="LocalizableStrings.PortalSetupCaption.Value" Value="Portal setup" />
+			<Item Name="LocalizableStrings.PortalUsersLinkCaption.Value" Value="Portal users" />
+			<Item Name="LocalizableStrings.ScoringModelCaption.Value" Value="Scoring models" />
+			<Item Name="LocalizableStrings.SiteEventTypeCaption.Value" Value="Website events tracking" />
+			<Item Name="LocalizableStrings.SocialLeadGenLinkCaption.Value" Value="Social lead generation service settings" />
+			<Item Name="LocalizableStrings.SspProfileContactSetupLinkCaption.Value" Value="Set up portal user profile page" />
+			<Item Name="LocalizableStrings.TrackingSettingsLinkCaption.Value" Value="Event tracking service settings" />
+			<Item Name="LocalizableStrings.TranslationSectionCaption.Value" Value="Translation" />
+			<Item Name="LocalizableStrings.UpdateBonusInSalesCaption.Value" Value="&quot;Compensation&quot; package update" />
+			<Item Name="LocalizableStrings.UseOldOpportunityManagementProcess.Value" Value="Do not use corporate sale process 7.8" />
+			<Item Name="LocalizableStrings.UseOpportunityManagementProcess780.Value" Value="Use corporate sale process 7.8" />
+			<Item Name="LocalizableStrings.WebFormsLinkCaption.Value" Value="Landing pages" />
+			<Item Name="LocalizableStrings.WebServicesCaption.Value" Value="Web services integration setup" />
+		</Items>
+	</Group>
+</Resources>

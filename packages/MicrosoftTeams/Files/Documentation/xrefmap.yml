@@ -1,0 +1,294 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: MicrosftTeams.WebServices.OAuthHandler
+  name: MicrosftTeams.WebServices.OAuthHandler
+  href: api/MicrosftTeams.WebServices.OAuthHandler.html
+  commentId: N:MicrosftTeams.WebServices.OAuthHandler
+  fullName: MicrosftTeams.WebServices.OAuthHandler
+  nameWithType: MicrosftTeams.WebServices.OAuthHandler
+- uid: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+  name: OAuthHandlerService
+  href: api/MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.html
+  commentId: T:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+  fullName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+  nameWithType: OAuthHandlerService
+- uid: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl
+  name: GetLoginUrl()
+  href: api/MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.html#MicrosftTeams_WebServices_OAuthHandler_OAuthHandlerService_GetLoginUrl
+  commentId: M:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl
+  fullName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl()
+  nameWithType: OAuthHandlerService.GetLoginUrl()
+- uid: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl*
+  name: GetLoginUrl
+  href: api/MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.html#MicrosftTeams_WebServices_OAuthHandler_OAuthHandlerService_GetLoginUrl_
+  commentId: Overload:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl
+  isSpec: "True"
+  fullName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl
+  nameWithType: OAuthHandlerService.GetLoginUrl
+- uid: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback(System.String,System.String)
+  name: OauthCallback(String, String)
+  href: api/MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.html#MicrosftTeams_WebServices_OAuthHandler_OAuthHandlerService_OauthCallback_System_String_System_String_
+  commentId: M:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback(System.String,System.String)
+  fullName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback(System.String, System.String)
+  nameWithType: OAuthHandlerService.OauthCallback(String, String)
+- uid: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback*
+  name: OauthCallback
+  href: api/MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.html#MicrosftTeams_WebServices_OAuthHandler_OAuthHandlerService_OauthCallback_
+  commentId: Overload:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback
+  isSpec: "True"
+  fullName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback
+  nameWithType: OAuthHandlerService.OauthCallback
+- uid: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+  name: TeamsOAuthResponse
+  href: api/MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.html
+  commentId: T:MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+  fullName: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+  nameWithType: TeamsOAuthResponse
+- uid: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+  name: LoginUrl
+  href: api/MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.html#MicrosftTeams_WebServices_OAuthHandler_TeamsOAuthResponse_LoginUrl
+  commentId: P:MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+  fullName: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+  nameWithType: TeamsOAuthResponse.LoginUrl
+- uid: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl*
+  name: LoginUrl
+  href: api/MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.html#MicrosftTeams_WebServices_OAuthHandler_TeamsOAuthResponse_LoginUrl_
+  commentId: Overload:MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+  isSpec: "True"
+  fullName: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+  nameWithType: TeamsOAuthResponse.LoginUrl
+- uid: MicrosoftTeams
+  name: MicrosoftTeams
+  href: api/MicrosoftTeams.html
+  commentId: N:MicrosoftTeams
+  fullName: MicrosoftTeams
+  nameWithType: MicrosoftTeams
+- uid: MicrosoftTeams.Builder
+  name: Builder
+  href: api/MicrosoftTeams.Builder.html
+  commentId: T:MicrosoftTeams.Builder
+  fullName: MicrosoftTeams.Builder
+  nameWithType: Builder
+- uid: MicrosoftTeams.Builder.Build
+  name: Build()
+  href: api/MicrosoftTeams.Builder.html#MicrosoftTeams_Builder_Build
+  commentId: M:MicrosoftTeams.Builder.Build
+  fullName: MicrosoftTeams.Builder.Build()
+  nameWithType: Builder.Build()
+- uid: MicrosoftTeams.Builder.Build*
+  name: Build
+  href: api/MicrosoftTeams.Builder.html#MicrosoftTeams_Builder_Build_
+  commentId: Overload:MicrosoftTeams.Builder.Build
+  isSpec: "True"
+  fullName: MicrosoftTeams.Builder.Build
+  nameWithType: Builder.Build
+- uid: MicrosoftTeams.Builder.ConfigureLogger(Common.Logging.ILog)
+  name: ConfigureLogger(ILog)
+  href: api/MicrosoftTeams.Builder.html#MicrosoftTeams_Builder_ConfigureLogger_Common_Logging_ILog_
+  commentId: M:MicrosoftTeams.Builder.ConfigureLogger(Common.Logging.ILog)
+  fullName: MicrosoftTeams.Builder.ConfigureLogger(Common.Logging.ILog)
+  nameWithType: Builder.ConfigureLogger(ILog)
+- uid: MicrosoftTeams.Builder.ConfigureLogger*
+  name: ConfigureLogger
+  href: api/MicrosoftTeams.Builder.html#MicrosoftTeams_Builder_ConfigureLogger_
+  commentId: Overload:MicrosoftTeams.Builder.ConfigureLogger
+  isSpec: "True"
+  fullName: MicrosoftTeams.Builder.ConfigureLogger
+  nameWithType: Builder.ConfigureLogger
+- uid: MicrosoftTeams.Builder.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+  name: ConfigureUserConnection(UserConnection)
+  href: api/MicrosoftTeams.Builder.html#MicrosoftTeams_Builder_ConfigureUserConnection_Terrasoft_Core_UserConnection_
+  commentId: M:MicrosoftTeams.Builder.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+  fullName: MicrosoftTeams.Builder.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+  nameWithType: Builder.ConfigureUserConnection(UserConnection)
+- uid: MicrosoftTeams.Builder.ConfigureUserConnection*
+  name: ConfigureUserConnection
+  href: api/MicrosoftTeams.Builder.html#MicrosoftTeams_Builder_ConfigureUserConnection_
+  commentId: Overload:MicrosoftTeams.Builder.ConfigureUserConnection
+  isSpec: "True"
+  fullName: MicrosoftTeams.Builder.ConfigureUserConnection
+  nameWithType: Builder.ConfigureUserConnection
+- uid: MicrosoftTeams.Dto
+  name: MicrosoftTeams.Dto
+  href: api/MicrosoftTeams.Dto.html
+  commentId: N:MicrosoftTeams.Dto
+  fullName: MicrosoftTeams.Dto
+  nameWithType: MicrosoftTeams.Dto
+- uid: MicrosoftTeams.Dto.Token
+  name: Token
+  href: api/MicrosoftTeams.Dto.Token.html
+  commentId: T:MicrosoftTeams.Dto.Token
+  fullName: MicrosoftTeams.Dto.Token
+  nameWithType: Token
+- uid: MicrosoftTeams.Dto.Token.AccessToken
+  name: AccessToken
+  href: api/MicrosoftTeams.Dto.Token.html#MicrosoftTeams_Dto_Token_AccessToken
+  commentId: P:MicrosoftTeams.Dto.Token.AccessToken
+  fullName: MicrosoftTeams.Dto.Token.AccessToken
+  nameWithType: Token.AccessToken
+- uid: MicrosoftTeams.Dto.Token.AccessToken*
+  name: AccessToken
+  href: api/MicrosoftTeams.Dto.Token.html#MicrosoftTeams_Dto_Token_AccessToken_
+  commentId: Overload:MicrosoftTeams.Dto.Token.AccessToken
+  isSpec: "True"
+  fullName: MicrosoftTeams.Dto.Token.AccessToken
+  nameWithType: Token.AccessToken
+- uid: MicrosoftTeams.Dto.Token.ExpiresIn
+  name: ExpiresIn
+  href: api/MicrosoftTeams.Dto.Token.html#MicrosoftTeams_Dto_Token_ExpiresIn
+  commentId: P:MicrosoftTeams.Dto.Token.ExpiresIn
+  fullName: MicrosoftTeams.Dto.Token.ExpiresIn
+  nameWithType: Token.ExpiresIn
+- uid: MicrosoftTeams.Dto.Token.ExpiresIn*
+  name: ExpiresIn
+  href: api/MicrosoftTeams.Dto.Token.html#MicrosoftTeams_Dto_Token_ExpiresIn_
+  commentId: Overload:MicrosoftTeams.Dto.Token.ExpiresIn
+  isSpec: "True"
+  fullName: MicrosoftTeams.Dto.Token.ExpiresIn
+  nameWithType: Token.ExpiresIn
+- uid: MicrosoftTeams.Dto.Token.RefreshToken
+  name: RefreshToken
+  href: api/MicrosoftTeams.Dto.Token.html#MicrosoftTeams_Dto_Token_RefreshToken
+  commentId: P:MicrosoftTeams.Dto.Token.RefreshToken
+  fullName: MicrosoftTeams.Dto.Token.RefreshToken
+  nameWithType: Token.RefreshToken
+- uid: MicrosoftTeams.Dto.Token.RefreshToken*
+  name: RefreshToken
+  href: api/MicrosoftTeams.Dto.Token.html#MicrosoftTeams_Dto_Token_RefreshToken_
+  commentId: Overload:MicrosoftTeams.Dto.Token.RefreshToken
+  isSpec: "True"
+  fullName: MicrosoftTeams.Dto.Token.RefreshToken
+  nameWithType: Token.RefreshToken
+- uid: MicrosoftTeams.Dto.Token.Scope
+  name: Scope
+  href: api/MicrosoftTeams.Dto.Token.html#MicrosoftTeams_Dto_Token_Scope
+  commentId: P:MicrosoftTeams.Dto.Token.Scope
+  fullName: MicrosoftTeams.Dto.Token.Scope
+  nameWithType: Token.Scope
+- uid: MicrosoftTeams.Dto.Token.Scope*
+  name: Scope
+  href: api/MicrosoftTeams.Dto.Token.html#MicrosoftTeams_Dto_Token_Scope_
+  commentId: Overload:MicrosoftTeams.Dto.Token.Scope
+  isSpec: "True"
+  fullName: MicrosoftTeams.Dto.Token.Scope
+  nameWithType: Token.Scope
+- uid: MicrosoftTeams.Dto.Token.TokenType
+  name: TokenType
+  href: api/MicrosoftTeams.Dto.Token.html#MicrosoftTeams_Dto_Token_TokenType
+  commentId: P:MicrosoftTeams.Dto.Token.TokenType
+  fullName: MicrosoftTeams.Dto.Token.TokenType
+  nameWithType: Token.TokenType
+- uid: MicrosoftTeams.Dto.Token.TokenType*
+  name: TokenType
+  href: api/MicrosoftTeams.Dto.Token.html#MicrosoftTeams_Dto_Token_TokenType_
+  commentId: Overload:MicrosoftTeams.Dto.Token.TokenType
+  isSpec: "True"
+  fullName: MicrosoftTeams.Dto.Token.TokenType
+  nameWithType: Token.TokenType
+- uid: MicrosoftTeams.Interfaces
+  name: MicrosoftTeams.Interfaces
+  href: api/MicrosoftTeams.Interfaces.html
+  commentId: N:MicrosoftTeams.Interfaces
+  fullName: MicrosoftTeams.Interfaces
+  nameWithType: MicrosoftTeams.Interfaces
+- uid: MicrosoftTeams.Interfaces.IApplication
+  name: IApplication
+  href: api/MicrosoftTeams.Interfaces.IApplication.html
+  commentId: T:MicrosoftTeams.Interfaces.IApplication
+  fullName: MicrosoftTeams.Interfaces.IApplication
+  nameWithType: IApplication
+- uid: MicrosoftTeams.Interfaces.IApplication.GetService*
+  name: GetService
+  href: api/MicrosoftTeams.Interfaces.IApplication.html#MicrosoftTeams_Interfaces_IApplication_GetService_
+  commentId: Overload:MicrosoftTeams.Interfaces.IApplication.GetService
+  isSpec: "True"
+  fullName: MicrosoftTeams.Interfaces.IApplication.GetService
+  nameWithType: IApplication.GetService
+- uid: MicrosoftTeams.Interfaces.IApplication.GetService``1
+  name: GetService<T>()
+  href: api/MicrosoftTeams.Interfaces.IApplication.html#MicrosoftTeams_Interfaces_IApplication_GetService__1
+  commentId: M:MicrosoftTeams.Interfaces.IApplication.GetService``1
+  name.vb: GetService(Of T)()
+  fullName: MicrosoftTeams.Interfaces.IApplication.GetService<T>()
+  fullName.vb: MicrosoftTeams.Interfaces.IApplication.GetService(Of T)()
+  nameWithType: IApplication.GetService<T>()
+  nameWithType.vb: IApplication.GetService(Of T)()
+- uid: MicrosoftTeams.Interfaces.IBuilder`1
+  name: IBuilder<TResult>
+  href: api/MicrosoftTeams.Interfaces.IBuilder-1.html
+  commentId: T:MicrosoftTeams.Interfaces.IBuilder`1
+  name.vb: IBuilder(Of TResult)
+  fullName: MicrosoftTeams.Interfaces.IBuilder<TResult>
+  fullName.vb: MicrosoftTeams.Interfaces.IBuilder(Of TResult)
+  nameWithType: IBuilder<TResult>
+  nameWithType.vb: IBuilder(Of TResult)
+- uid: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+  name: ConfigureUserConnection(UserConnection)
+  href: api/MicrosoftTeams.Interfaces.IBuilder-1.html#MicrosoftTeams_Interfaces_IBuilder_1_ConfigureUserConnection_Terrasoft_Core_UserConnection_
+  commentId: M:MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+  fullName: MicrosoftTeams.Interfaces.IBuilder<TResult>.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+  fullName.vb: MicrosoftTeams.Interfaces.IBuilder(Of TResult).ConfigureUserConnection(Terrasoft.Core.UserConnection)
+  nameWithType: IBuilder<TResult>.ConfigureUserConnection(UserConnection)
+  nameWithType.vb: IBuilder(Of TResult).ConfigureUserConnection(UserConnection)
+- uid: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection*
+  name: ConfigureUserConnection
+  href: api/MicrosoftTeams.Interfaces.IBuilder-1.html#MicrosoftTeams_Interfaces_IBuilder_1_ConfigureUserConnection_
+  commentId: Overload:MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection
+  isSpec: "True"
+  fullName: MicrosoftTeams.Interfaces.IBuilder<TResult>.ConfigureUserConnection
+  fullName.vb: MicrosoftTeams.Interfaces.IBuilder(Of TResult).ConfigureUserConnection
+  nameWithType: IBuilder<TResult>.ConfigureUserConnection
+  nameWithType.vb: IBuilder(Of TResult).ConfigureUserConnection
+- uid: MicrosoftTeams.Interfaces.IStage2`1
+  name: IStage2<TResult>
+  href: api/MicrosoftTeams.Interfaces.IStage2-1.html
+  commentId: T:MicrosoftTeams.Interfaces.IStage2`1
+  name.vb: IStage2(Of TResult)
+  fullName: MicrosoftTeams.Interfaces.IStage2<TResult>
+  fullName.vb: MicrosoftTeams.Interfaces.IStage2(Of TResult)
+  nameWithType: IStage2<TResult>
+  nameWithType.vb: IStage2(Of TResult)
+- uid: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog)
+  name: ConfigureLogger(ILog)
+  href: api/MicrosoftTeams.Interfaces.IStage2-1.html#MicrosoftTeams_Interfaces_IStage2_1_ConfigureLogger_Common_Logging_ILog_
+  commentId: M:MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog)
+  fullName: MicrosoftTeams.Interfaces.IStage2<TResult>.ConfigureLogger(Common.Logging.ILog)
+  fullName.vb: MicrosoftTeams.Interfaces.IStage2(Of TResult).ConfigureLogger(Common.Logging.ILog)
+  nameWithType: IStage2<TResult>.ConfigureLogger(ILog)
+  nameWithType.vb: IStage2(Of TResult).ConfigureLogger(ILog)
+- uid: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger*
+  name: ConfigureLogger
+  href: api/MicrosoftTeams.Interfaces.IStage2-1.html#MicrosoftTeams_Interfaces_IStage2_1_ConfigureLogger_
+  commentId: Overload:MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger
+  isSpec: "True"
+  fullName: MicrosoftTeams.Interfaces.IStage2<TResult>.ConfigureLogger
+  fullName.vb: MicrosoftTeams.Interfaces.IStage2(Of TResult).ConfigureLogger
+  nameWithType: IStage2<TResult>.ConfigureLogger
+  nameWithType.vb: IStage2(Of TResult).ConfigureLogger
+- uid: MicrosoftTeams.Interfaces.IStageBuild`1
+  name: IStageBuild<TResult>
+  href: api/MicrosoftTeams.Interfaces.IStageBuild-1.html
+  commentId: T:MicrosoftTeams.Interfaces.IStageBuild`1
+  name.vb: IStageBuild(Of TResult)
+  fullName: MicrosoftTeams.Interfaces.IStageBuild<TResult>
+  fullName.vb: MicrosoftTeams.Interfaces.IStageBuild(Of TResult)
+  nameWithType: IStageBuild<TResult>
+  nameWithType.vb: IStageBuild(Of TResult)
+- uid: MicrosoftTeams.Interfaces.IStageBuild`1.Build
+  name: Build()
+  href: api/MicrosoftTeams.Interfaces.IStageBuild-1.html#MicrosoftTeams_Interfaces_IStageBuild_1_Build
+  commentId: M:MicrosoftTeams.Interfaces.IStageBuild`1.Build
+  fullName: MicrosoftTeams.Interfaces.IStageBuild<TResult>.Build()
+  fullName.vb: MicrosoftTeams.Interfaces.IStageBuild(Of TResult).Build()
+  nameWithType: IStageBuild<TResult>.Build()
+  nameWithType.vb: IStageBuild(Of TResult).Build()
+- uid: MicrosoftTeams.Interfaces.IStageBuild`1.Build*
+  name: Build
+  href: api/MicrosoftTeams.Interfaces.IStageBuild-1.html#MicrosoftTeams_Interfaces_IStageBuild_1_Build_
+  commentId: Overload:MicrosoftTeams.Interfaces.IStageBuild`1.Build
+  isSpec: "True"
+  fullName: MicrosoftTeams.Interfaces.IStageBuild<TResult>.Build
+  fullName.vb: MicrosoftTeams.Interfaces.IStageBuild(Of TResult).Build
+  nameWithType: IStageBuild<TResult>.Build
+  nameWithType.vb: IStageBuild(Of TResult).Build

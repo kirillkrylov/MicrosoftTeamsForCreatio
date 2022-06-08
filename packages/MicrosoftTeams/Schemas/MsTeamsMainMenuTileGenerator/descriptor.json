@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "ff42a697-4dc1-4e39-93b0-97f95ba6adda",
+    "Name": "MsTeamsMainMenuTileGenerator",
+    "ModifiedOnUtc": "\/Date(1654404510000)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "MsTeamsMainMenuTileGenerator",
+    "DependsOn": []
+  }
+}

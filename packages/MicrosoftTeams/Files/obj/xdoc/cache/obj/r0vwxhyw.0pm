@@ -1,0 +1,501 @@
+id: MicrosoftTeams
+language: CSharp
+name:
+  Default: MicrosoftTeams
+qualifiedName:
+  Default: MicrosoftTeams
+type: Assembly
+modifiers: {}
+items:
+- id: MicrosftTeams.WebServices
+  commentId: N:MicrosftTeams.WebServices
+  language: CSharp
+  name:
+    CSharp: MicrosftTeams.WebServices
+    VB: MicrosftTeams.WebServices
+  nameWithType:
+    CSharp: MicrosftTeams.WebServices
+    VB: MicrosftTeams.WebServices
+  qualifiedName:
+    CSharp: MicrosftTeams.WebServices
+    VB: MicrosftTeams.WebServices
+  type: Namespace
+  assemblies:
+  - MicrosoftTeams
+  modifiers: {}
+  items:
+  - id: MicrosftTeams.WebServices.DemoWebService
+    commentId: T:MicrosftTeams.WebServices.DemoWebService
+    language: CSharp
+    name:
+      CSharp: DemoWebService
+      VB: DemoWebService
+    nameWithType:
+      CSharp: DemoWebService
+      VB: DemoWebService
+    qualifiedName:
+      CSharp: MicrosftTeams.WebServices.DemoWebService
+      VB: MicrosftTeams.WebServices.DemoWebService
+    type: Class
+    assemblies:
+    - MicrosoftTeams
+    namespace: MicrosftTeams.WebServices
+    source:
+      remote:
+        path: C:/TechTalk/packages/MicrosoftTeams/Files/WebServices/DemoWebService.cs
+      id: DemoWebService
+      path: ../packages/MicrosoftTeams/Files/WebServices/DemoWebService.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: >-
+          [ServiceContract]
+
+          [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
+
+          public class DemoWebService : BaseService
+        VB: >-
+          <ServiceContract>
+
+          <AspNetCompatibilityRequirements(RequirementsMode:=AspNetCompatibilityRequirementsMode.Required)>
+
+          Public Class DemoWebService
+
+              Inherits BaseService
+    inheritance:
+    - System.Object
+    attributes:
+    - type: System.ServiceModel.ServiceContractAttribute
+      ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+      arguments: []
+    - type: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+      ctor: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor
+      arguments: []
+      namedArguments:
+      - name: RequirementsMode
+        type: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        value: 2
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: MicrosftTeams.WebServices.DemoWebService.GetExample
+      commentId: M:MicrosftTeams.WebServices.DemoWebService.GetExample
+      language: CSharp
+      name:
+        CSharp: GetExample()
+        VB: GetExample()
+      nameWithType:
+        CSharp: DemoWebService.GetExample()
+        VB: DemoWebService.GetExample()
+      qualifiedName:
+        CSharp: MicrosftTeams.WebServices.DemoWebService.GetExample()
+        VB: MicrosftTeams.WebServices.DemoWebService.GetExample()
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosftTeams.WebServices
+      source:
+        remote:
+          path: C:/TechTalk/packages/MicrosoftTeams/Files/WebServices/DemoWebService.cs
+        id: GetExample
+        path: ../packages/MicrosoftTeams/Files/WebServices/DemoWebService.cs
+        startLine: 30
+      summary: "\n"
+      example: []
+      syntax:
+        content:
+          CSharp: >-
+            [OperationContract]
+
+            [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
+
+            public string GetExample()
+          VB: >-
+            <OperationContract>
+
+            <WebInvoke(Method:="GET", RequestFormat:=WebMessageFormat.Json, BodyStyle:=WebMessageBodyStyle.Wrapped, ResponseFormat:=WebMessageFormat.Json)>
+
+            Public Function GetExample As String
+        return:
+          type: System.String
+          description: ''
+      overload: MicrosftTeams.WebServices.DemoWebService.GetExample*
+      seealso:
+      - linkType: HRef
+        linkId: http://localhost:8050/0/rest/DemoWebService/GetExample
+        altText: example
+      attributes:
+      - type: System.ServiceModel.OperationContractAttribute
+        ctor: System.ServiceModel.OperationContractAttribute.#ctor
+        arguments: []
+      - type: System.ServiceModel.Web.WebInvokeAttribute
+        ctor: System.ServiceModel.Web.WebInvokeAttribute.#ctor
+        arguments: []
+        namedArguments:
+        - name: Method
+          type: System.String
+          value: GET
+        - name: RequestFormat
+          type: System.ServiceModel.Web.WebMessageFormat
+          value: 1
+        - name: BodyStyle
+          type: System.ServiceModel.Web.WebMessageBodyStyle
+          value: 1
+        - name: ResponseFormat
+          type: System.ServiceModel.Web.WebMessageFormat
+          value: 1
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  MicrosftTeams.WebServices.DemoWebService.GetExample*:
+    name:
+      CSharp:
+      - id: MicrosftTeams.WebServices.DemoWebService.GetExample*
+        name: GetExample
+        nameWithType: DemoWebService.GetExample
+        qualifiedName: MicrosftTeams.WebServices.DemoWebService.GetExample
+      VB:
+      - id: MicrosftTeams.WebServices.DemoWebService.GetExample*
+        name: GetExample
+        nameWithType: DemoWebService.GetExample
+        qualifiedName: MicrosftTeams.WebServices.DemoWebService.GetExample
+    isDefinition: true
+    commentId: Overload:MicrosftTeams.WebServices.DemoWebService.GetExample
+  System.ServiceModel:
+    name:
+      CSharp:
+      - name: System.ServiceModel
+        nameWithType: System.ServiceModel
+        qualifiedName: System.ServiceModel
+        isExternal: true
+      VB:
+      - name: System.ServiceModel
+        nameWithType: System.ServiceModel
+        qualifiedName: System.ServiceModel
+    isDefinition: true
+    commentId: N:System.ServiceModel
+  System.ServiceModel.OperationContractAttribute:
+    name:
+      CSharp:
+      - id: System.ServiceModel.OperationContractAttribute
+        name: OperationContractAttribute
+        nameWithType: OperationContractAttribute
+        qualifiedName: System.ServiceModel.OperationContractAttribute
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.OperationContractAttribute
+        name: OperationContractAttribute
+        nameWithType: OperationContractAttribute
+        qualifiedName: System.ServiceModel.OperationContractAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel
+    commentId: T:System.ServiceModel.OperationContractAttribute
+  System.ServiceModel.OperationContractAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.ServiceModel.OperationContractAttribute.#ctor
+        name: OperationContractAttribute
+        nameWithType: OperationContractAttribute.OperationContractAttribute
+        qualifiedName: System.ServiceModel.OperationContractAttribute.OperationContractAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ServiceModel.OperationContractAttribute.#ctor
+        name: OperationContractAttribute
+        nameWithType: OperationContractAttribute.OperationContractAttribute
+        qualifiedName: System.ServiceModel.OperationContractAttribute.OperationContractAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ServiceModel.OperationContractAttribute
+    commentId: M:System.ServiceModel.OperationContractAttribute.#ctor
+  System.ServiceModel.Web:
+    name:
+      CSharp:
+      - name: System.ServiceModel.Web
+        nameWithType: System.ServiceModel.Web
+        qualifiedName: System.ServiceModel.Web
+        isExternal: true
+      VB:
+      - name: System.ServiceModel.Web
+        nameWithType: System.ServiceModel.Web
+        qualifiedName: System.ServiceModel.Web
+    isDefinition: true
+    commentId: N:System.ServiceModel.Web
+  System.ServiceModel.Web.WebInvokeAttribute:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Web.WebInvokeAttribute
+        name: WebInvokeAttribute
+        nameWithType: WebInvokeAttribute
+        qualifiedName: System.ServiceModel.Web.WebInvokeAttribute
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.Web.WebInvokeAttribute
+        name: WebInvokeAttribute
+        nameWithType: WebInvokeAttribute
+        qualifiedName: System.ServiceModel.Web.WebInvokeAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel.Web
+    commentId: T:System.ServiceModel.Web.WebInvokeAttribute
+  System.ServiceModel.Web.WebInvokeAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Web.WebInvokeAttribute.#ctor
+        name: WebInvokeAttribute
+        nameWithType: WebInvokeAttribute.WebInvokeAttribute
+        qualifiedName: System.ServiceModel.Web.WebInvokeAttribute.WebInvokeAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ServiceModel.Web.WebInvokeAttribute.#ctor
+        name: WebInvokeAttribute
+        nameWithType: WebInvokeAttribute.WebInvokeAttribute
+        qualifiedName: System.ServiceModel.Web.WebInvokeAttribute.WebInvokeAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ServiceModel.Web.WebInvokeAttribute
+    commentId: M:System.ServiceModel.Web.WebInvokeAttribute.#ctor
+  System.ServiceModel.Web.WebMessageFormat:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Web.WebMessageFormat
+        name: WebMessageFormat
+        nameWithType: WebMessageFormat
+        qualifiedName: System.ServiceModel.Web.WebMessageFormat
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.Web.WebMessageFormat
+        name: WebMessageFormat
+        nameWithType: WebMessageFormat
+        qualifiedName: System.ServiceModel.Web.WebMessageFormat
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel.Web
+    commentId: T:System.ServiceModel.Web.WebMessageFormat
+  System.ServiceModel.Web.WebMessageBodyStyle:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Web.WebMessageBodyStyle
+        name: WebMessageBodyStyle
+        nameWithType: WebMessageBodyStyle
+        qualifiedName: System.ServiceModel.Web.WebMessageBodyStyle
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.Web.WebMessageBodyStyle
+        name: WebMessageBodyStyle
+        nameWithType: WebMessageBodyStyle
+        qualifiedName: System.ServiceModel.Web.WebMessageBodyStyle
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel.Web
+    commentId: T:System.ServiceModel.Web.WebMessageBodyStyle
+  MicrosftTeams.WebServices.DemoWebService:
+    name:
+      CSharp:
+      - id: MicrosftTeams.WebServices.DemoWebService
+        name: DemoWebService
+        nameWithType: DemoWebService
+        qualifiedName: MicrosftTeams.WebServices.DemoWebService
+      VB:
+      - id: MicrosftTeams.WebServices.DemoWebService
+        name: DemoWebService
+        nameWithType: DemoWebService
+        qualifiedName: MicrosftTeams.WebServices.DemoWebService
+    isDefinition: true
+    commentId: T:MicrosftTeams.WebServices.DemoWebService
+  System.ServiceModel.ServiceContractAttribute:
+    name:
+      CSharp:
+      - id: System.ServiceModel.ServiceContractAttribute
+        name: ServiceContractAttribute
+        nameWithType: ServiceContractAttribute
+        qualifiedName: System.ServiceModel.ServiceContractAttribute
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.ServiceContractAttribute
+        name: ServiceContractAttribute
+        nameWithType: ServiceContractAttribute
+        qualifiedName: System.ServiceModel.ServiceContractAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel
+    commentId: T:System.ServiceModel.ServiceContractAttribute
+  System.ServiceModel.ServiceContractAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.ServiceModel.ServiceContractAttribute.#ctor
+        name: ServiceContractAttribute
+        nameWithType: ServiceContractAttribute.ServiceContractAttribute
+        qualifiedName: System.ServiceModel.ServiceContractAttribute.ServiceContractAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ServiceModel.ServiceContractAttribute.#ctor
+        name: ServiceContractAttribute
+        nameWithType: ServiceContractAttribute.ServiceContractAttribute
+        qualifiedName: System.ServiceModel.ServiceContractAttribute.ServiceContractAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ServiceModel.ServiceContractAttribute
+    commentId: M:System.ServiceModel.ServiceContractAttribute.#ctor
+  System.ServiceModel.Activation:
+    name:
+      CSharp:
+      - name: System.ServiceModel.Activation
+        nameWithType: System.ServiceModel.Activation
+        qualifiedName: System.ServiceModel.Activation
+        isExternal: true
+      VB:
+      - name: System.ServiceModel.Activation
+        nameWithType: System.ServiceModel.Activation
+        qualifiedName: System.ServiceModel.Activation
+    isDefinition: true
+    commentId: N:System.ServiceModel.Activation
+  System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+        name: AspNetCompatibilityRequirementsAttribute
+        nameWithType: AspNetCompatibilityRequirementsAttribute
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+        name: AspNetCompatibilityRequirementsAttribute
+        nameWithType: AspNetCompatibilityRequirementsAttribute
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel.Activation
+    commentId: T:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+  System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor
+        name: AspNetCompatibilityRequirementsAttribute
+        nameWithType: AspNetCompatibilityRequirementsAttribute.AspNetCompatibilityRequirementsAttribute
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.AspNetCompatibilityRequirementsAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor
+        name: AspNetCompatibilityRequirementsAttribute
+        nameWithType: AspNetCompatibilityRequirementsAttribute.AspNetCompatibilityRequirementsAttribute
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.AspNetCompatibilityRequirementsAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+    commentId: M:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor
+  System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        name: AspNetCompatibilityRequirementsMode
+        nameWithType: AspNetCompatibilityRequirementsMode
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        name: AspNetCompatibilityRequirementsMode
+        nameWithType: AspNetCompatibilityRequirementsMode
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel.Activation
+    commentId: T:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+  MicrosftTeams.WebServices:
+    name:
+      CSharp:
+      - name: MicrosftTeams.WebServices
+        nameWithType: MicrosftTeams.WebServices
+        qualifiedName: MicrosftTeams.WebServices
+      VB:
+      - name: MicrosftTeams.WebServices
+        nameWithType: MicrosftTeams.WebServices
+        qualifiedName: MicrosftTeams.WebServices
+    isDefinition: true
+    commentId: N:MicrosftTeams.WebServices

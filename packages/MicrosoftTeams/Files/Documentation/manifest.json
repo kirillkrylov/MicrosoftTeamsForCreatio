@@ -1,0 +1,270 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/TechTalk/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.html",
+          "hash": "DoenYbOHfL0CJ7RwLxJBkR1WQuFQXpgiZdV7ltN5zdA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.html",
+          "hash": "63eXgxCeeqwR/MvT2JlfcO8EnRjisld6Rf4iImke6b8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosftTeams.WebServices.OAuthHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosftTeams.WebServices.OAuthHandler.html",
+          "hash": "zSjk+6ytrdbjMNzirokKNfXkJt7Bi3S3ymLteBwPcpI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosoftTeams.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosoftTeams.Builder.html",
+          "hash": "tKVSRKWKGvJjq3LV8rG6uSMxaJ6uRC9dPjBbHamhwcQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosoftTeams.Dto.Token.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosoftTeams.Dto.Token.html",
+          "hash": "nI253dxpDbbBdpllF8pszGqqsOpjzZX4R9Ntv1Ex+0s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosoftTeams.Dto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosoftTeams.Dto.html",
+          "hash": "8/kV1J/hyN4TSYa5BV8D+2bAgZrldX72GAs90bdwSBE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosoftTeams.Interfaces.IApplication.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosoftTeams.Interfaces.IApplication.html",
+          "hash": "kw75nzKNVWYCkaSzECThpJONPHaSlB71TXdRV8AUcNE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosoftTeams.Interfaces.IBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosoftTeams.Interfaces.IBuilder-1.html",
+          "hash": "6raL/kuB6HVWzPuexYTwLwMdOA+QzKrFr6Ozv6IPye0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosoftTeams.Interfaces.IStage2-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosoftTeams.Interfaces.IStage2-1.html",
+          "hash": "gzJpvn+6+9K8m3/Rc08QXcLSbKpbuX5hRXmALQFc5DI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosoftTeams.Interfaces.IStageBuild-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosoftTeams.Interfaces.IStageBuild-1.html",
+          "hash": "LdhjdSzVAH0Ag4yQinn6z5dDpkW40TpOsg4zl8VvxDA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosoftTeams.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosoftTeams.Interfaces.html",
+          "hash": "VwzmZEsKYvgwiJBjlRi5k/FADEyf/+4IlqWb08CzqYc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicrosoftTeams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicrosoftTeams.html",
+          "hash": "jzK3SgCtcEcC1rY/GbDTrSE31QIP7/3oZH/m9YAoKVM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "JkNbe7sWQvJVjeysxkSBfuH62MhTtF1lBRF22tlcJ8c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "pjFY109j5elqhzGQZ394sdr8tc9xaQ/jpa5rvrd6nos="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "fdw9ARtbxFUPXVKFuLc8k9Qw8XNjz0tLIbt85WP56h4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "8f8xM3O7OYor8VjXjbPCMJ6BRgk7CEu2BoT12/NtTfA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 12,
+          "skipped_file_count": 9
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,3602 @@
+id: MicrosoftTeams
+language: CSharp
+name:
+  Default: MicrosoftTeams
+qualifiedName:
+  Default: MicrosoftTeams
+type: Assembly
+modifiers: {}
+items:
+- id: MicrosoftTeams
+  commentId: N:MicrosoftTeams
+  language: CSharp
+  name:
+    CSharp: MicrosoftTeams
+    VB: MicrosoftTeams
+  nameWithType:
+    CSharp: MicrosoftTeams
+    VB: MicrosoftTeams
+  qualifiedName:
+    CSharp: MicrosoftTeams
+    VB: MicrosoftTeams
+  type: Namespace
+  assemblies:
+  - MicrosoftTeams
+  modifiers: {}
+  items:
+  - id: MicrosoftTeams.Builder
+    commentId: T:MicrosoftTeams.Builder
+    language: CSharp
+    name:
+      CSharp: Builder
+      VB: Builder
+    nameWithType:
+      CSharp: Builder
+      VB: Builder
+    qualifiedName:
+      CSharp: MicrosoftTeams.Builder
+      VB: MicrosoftTeams.Builder
+    type: Class
+    assemblies:
+    - MicrosoftTeams
+    namespace: MicrosoftTeams
+    source:
+      remote:
+        path: packages/MicrosoftTeams/Files/Builder.cs
+        branch: master
+        repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+      id: Builder
+      path: ../packages/MicrosoftTeams/Files/Builder.cs
+      startLine: 11
+    summary: "\nDlbMsTeamsConnector builder\n"
+    example: []
+    syntax:
+      content:
+        CSharp: >-
+          [DefaultBinding(typeof(IBuilder<IApplication>))]
+
+          public class Builder : IBuilder<IApplication>, IStage2<IApplication>, IStageBuild<IApplication>
+        VB: >-
+          <DefaultBinding(GetType(IBuilder(Of IApplication)))>
+
+          Public Class Builder
+
+              Implements IBuilder(Of IApplication), IStage2(Of IApplication), IStageBuild(Of IApplication)
+    inheritance:
+    - System.Object
+    implements:
+    - MicrosoftTeams.Interfaces.IBuilder{MicrosoftTeams.Interfaces.IApplication}
+    - MicrosoftTeams.Interfaces.IStage2{MicrosoftTeams.Interfaces.IApplication}
+    - MicrosoftTeams.Interfaces.IStageBuild{MicrosoftTeams.Interfaces.IApplication}
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    attributes:
+    - type: Terrasoft.Core.Factories.DefaultBindingAttribute
+      ctor: Terrasoft.Core.Factories.DefaultBindingAttribute.#ctor(System.Type)
+      arguments:
+      - type: System.Type
+        value: MicrosoftTeams.Interfaces.IBuilder{MicrosoftTeams.Interfaces.IApplication}
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: MicrosoftTeams.Builder.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+      commentId: M:MicrosoftTeams.Builder.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+      language: CSharp
+      name:
+        CSharp: ConfigureUserConnection(UserConnection)
+        VB: ConfigureUserConnection(UserConnection)
+      nameWithType:
+        CSharp: Builder.ConfigureUserConnection(UserConnection)
+        VB: Builder.ConfigureUserConnection(UserConnection)
+      qualifiedName:
+        CSharp: MicrosoftTeams.Builder.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+        VB: MicrosoftTeams.Builder.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Builder.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: ConfigureUserConnection
+        path: ../packages/MicrosoftTeams/Files/Builder.cs
+        startLine: 20
+      example: []
+      syntax:
+        content:
+          CSharp: public IStage2<IApplication> ConfigureUserConnection(UserConnection userConnection)
+          VB: Public Function ConfigureUserConnection(userConnection As UserConnection) As IStage2(Of IApplication)
+        parameters:
+        - id: userConnection
+          type: Terrasoft.Core.UserConnection
+        return:
+          type: MicrosoftTeams.Interfaces.IStage2{MicrosoftTeams.Interfaces.IApplication}
+      overload: MicrosoftTeams.Builder.ConfigureUserConnection*
+      implements:
+      - MicrosoftTeams.Interfaces.IBuilder{MicrosoftTeams.Interfaces.IApplication}.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+      references:
+        MicrosoftTeams.Interfaces.IBuilder`1: 
+    - id: MicrosoftTeams.Builder.ConfigureLogger(Common.Logging.ILog)
+      commentId: M:MicrosoftTeams.Builder.ConfigureLogger(Common.Logging.ILog)
+      language: CSharp
+      name:
+        CSharp: ConfigureLogger(ILog)
+        VB: ConfigureLogger(ILog)
+      nameWithType:
+        CSharp: Builder.ConfigureLogger(ILog)
+        VB: Builder.ConfigureLogger(ILog)
+      qualifiedName:
+        CSharp: MicrosoftTeams.Builder.ConfigureLogger(Common.Logging.ILog)
+        VB: MicrosoftTeams.Builder.ConfigureLogger(Common.Logging.ILog)
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Builder.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: ConfigureLogger
+        path: ../packages/MicrosoftTeams/Files/Builder.cs
+        startLine: 27
+      example: []
+      syntax:
+        content:
+          CSharp: public IStageBuild<IApplication> ConfigureLogger(ILog logger)
+          VB: Public Function ConfigureLogger(logger As ILog) As IStageBuild(Of IApplication)
+        parameters:
+        - id: logger
+          type: Common.Logging.ILog
+        return:
+          type: MicrosoftTeams.Interfaces.IStageBuild{MicrosoftTeams.Interfaces.IApplication}
+      overload: MicrosoftTeams.Builder.ConfigureLogger*
+      implements:
+      - MicrosoftTeams.Interfaces.IStage2{MicrosoftTeams.Interfaces.IApplication}.ConfigureLogger(Common.Logging.ILog)
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: MicrosoftTeams.Builder.Build
+      commentId: M:MicrosoftTeams.Builder.Build
+      language: CSharp
+      name:
+        CSharp: Build()
+        VB: Build()
+      nameWithType:
+        CSharp: Builder.Build()
+        VB: Builder.Build()
+      qualifiedName:
+        CSharp: MicrosoftTeams.Builder.Build()
+        VB: MicrosoftTeams.Builder.Build()
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Builder.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: Build
+        path: ../packages/MicrosoftTeams/Files/Builder.cs
+        startLine: 34
+      example: []
+      syntax:
+        content:
+          CSharp: public IApplication Build()
+          VB: Public Function Build As IApplication
+        return:
+          type: MicrosoftTeams.Interfaces.IApplication
+      overload: MicrosoftTeams.Builder.Build*
+      implements:
+      - MicrosoftTeams.Interfaces.IStageBuild{MicrosoftTeams.Interfaces.IApplication}.Build
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+- id: MicrosoftTeams.Dto
+  commentId: N:MicrosoftTeams.Dto
+  language: CSharp
+  name:
+    CSharp: MicrosoftTeams.Dto
+    VB: MicrosoftTeams.Dto
+  nameWithType:
+    CSharp: MicrosoftTeams.Dto
+    VB: MicrosoftTeams.Dto
+  qualifiedName:
+    CSharp: MicrosoftTeams.Dto
+    VB: MicrosoftTeams.Dto
+  type: Namespace
+  assemblies:
+  - MicrosoftTeams
+  modifiers: {}
+  items:
+  - id: MicrosoftTeams.Dto.Token
+    commentId: T:MicrosoftTeams.Dto.Token
+    language: CSharp
+    name:
+      CSharp: Token
+      VB: Token
+    nameWithType:
+      CSharp: Token
+      VB: Token
+    qualifiedName:
+      CSharp: MicrosoftTeams.Dto.Token
+      VB: MicrosoftTeams.Dto.Token
+    type: Class
+    assemblies:
+    - MicrosoftTeams
+    namespace: MicrosoftTeams.Dto
+    source:
+      remote:
+        path: packages/MicrosoftTeams/Files/Dto/Token.cs
+        branch: master
+        repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+      id: Token
+      path: ../packages/MicrosoftTeams/Files/Dto/Token.cs
+      startLine: 4
+    syntax:
+      content:
+        CSharp: public class Token
+        VB: Public Class Token
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: MicrosoftTeams.Dto.Token.TokenType
+      commentId: P:MicrosoftTeams.Dto.Token.TokenType
+      language: CSharp
+      name:
+        CSharp: TokenType
+        VB: TokenType
+      nameWithType:
+        CSharp: Token.TokenType
+        VB: Token.TokenType
+      qualifiedName:
+        CSharp: MicrosoftTeams.Dto.Token.TokenType
+        VB: MicrosoftTeams.Dto.Token.TokenType
+      type: Property
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams.Dto
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Dto/Token.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: TokenType
+        path: ../packages/MicrosoftTeams/Files/Dto/Token.cs
+        startLine: 6
+      syntax:
+        content:
+          CSharp: >-
+            [JsonProperty("token_type")]
+
+            public string TokenType { get; set; }
+          VB: >-
+            <JsonProperty("token_type")>
+
+            Public Property TokenType As String
+        parameters: []
+        return:
+          type: System.String
+      overload: MicrosoftTeams.Dto.Token.TokenType*
+      attributes:
+      - type: Newtonsoft.Json.JsonPropertyAttribute
+        ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+        arguments:
+        - type: System.String
+          value: token_type
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: MicrosoftTeams.Dto.Token.Scope
+      commentId: P:MicrosoftTeams.Dto.Token.Scope
+      language: CSharp
+      name:
+        CSharp: Scope
+        VB: Scope
+      nameWithType:
+        CSharp: Token.Scope
+        VB: Token.Scope
+      qualifiedName:
+        CSharp: MicrosoftTeams.Dto.Token.Scope
+        VB: MicrosoftTeams.Dto.Token.Scope
+      type: Property
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams.Dto
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Dto/Token.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: Scope
+        path: ../packages/MicrosoftTeams/Files/Dto/Token.cs
+        startLine: 9
+      syntax:
+        content:
+          CSharp: >-
+            [JsonProperty("scope")]
+
+            public string Scope { get; set; }
+          VB: >-
+            <JsonProperty("scope")>
+
+            Public Property Scope As String
+        parameters: []
+        return:
+          type: System.String
+      overload: MicrosoftTeams.Dto.Token.Scope*
+      attributes:
+      - type: Newtonsoft.Json.JsonPropertyAttribute
+        ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+        arguments:
+        - type: System.String
+          value: scope
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: MicrosoftTeams.Dto.Token.ExpiresIn
+      commentId: P:MicrosoftTeams.Dto.Token.ExpiresIn
+      language: CSharp
+      name:
+        CSharp: ExpiresIn
+        VB: ExpiresIn
+      nameWithType:
+        CSharp: Token.ExpiresIn
+        VB: Token.ExpiresIn
+      qualifiedName:
+        CSharp: MicrosoftTeams.Dto.Token.ExpiresIn
+        VB: MicrosoftTeams.Dto.Token.ExpiresIn
+      type: Property
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams.Dto
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Dto/Token.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: ExpiresIn
+        path: ../packages/MicrosoftTeams/Files/Dto/Token.cs
+        startLine: 12
+      syntax:
+        content:
+          CSharp: >-
+            [JsonProperty("expires_in")]
+
+            public int ExpiresIn { get; set; }
+          VB: >-
+            <JsonProperty("expires_in")>
+
+            Public Property ExpiresIn As Integer
+        parameters: []
+        return:
+          type: System.Int32
+      overload: MicrosoftTeams.Dto.Token.ExpiresIn*
+      attributes:
+      - type: Newtonsoft.Json.JsonPropertyAttribute
+        ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+        arguments:
+        - type: System.String
+          value: expires_in
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: MicrosoftTeams.Dto.Token.AccessToken
+      commentId: P:MicrosoftTeams.Dto.Token.AccessToken
+      language: CSharp
+      name:
+        CSharp: AccessToken
+        VB: AccessToken
+      nameWithType:
+        CSharp: Token.AccessToken
+        VB: Token.AccessToken
+      qualifiedName:
+        CSharp: MicrosoftTeams.Dto.Token.AccessToken
+        VB: MicrosoftTeams.Dto.Token.AccessToken
+      type: Property
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams.Dto
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Dto/Token.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: AccessToken
+        path: ../packages/MicrosoftTeams/Files/Dto/Token.cs
+        startLine: 15
+      syntax:
+        content:
+          CSharp: >-
+            [JsonProperty("access_token")]
+
+            public string AccessToken { get; set; }
+          VB: >-
+            <JsonProperty("access_token")>
+
+            Public Property AccessToken As String
+        parameters: []
+        return:
+          type: System.String
+      overload: MicrosoftTeams.Dto.Token.AccessToken*
+      attributes:
+      - type: Newtonsoft.Json.JsonPropertyAttribute
+        ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+        arguments:
+        - type: System.String
+          value: access_token
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: MicrosoftTeams.Dto.Token.RefreshToken
+      commentId: P:MicrosoftTeams.Dto.Token.RefreshToken
+      language: CSharp
+      name:
+        CSharp: RefreshToken
+        VB: RefreshToken
+      nameWithType:
+        CSharp: Token.RefreshToken
+        VB: Token.RefreshToken
+      qualifiedName:
+        CSharp: MicrosoftTeams.Dto.Token.RefreshToken
+        VB: MicrosoftTeams.Dto.Token.RefreshToken
+      type: Property
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams.Dto
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Dto/Token.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: RefreshToken
+        path: ../packages/MicrosoftTeams/Files/Dto/Token.cs
+        startLine: 18
+      syntax:
+        content:
+          CSharp: >-
+            [JsonProperty("refresh_token")]
+
+            public string RefreshToken { get; set; }
+          VB: >-
+            <JsonProperty("refresh_token")>
+
+            Public Property RefreshToken As String
+        parameters: []
+        return:
+          type: System.String
+      overload: MicrosoftTeams.Dto.Token.RefreshToken*
+      attributes:
+      - type: Newtonsoft.Json.JsonPropertyAttribute
+        ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+        arguments:
+        - type: System.String
+          value: refresh_token
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+- id: MicrosoftTeams.Interfaces
+  commentId: N:MicrosoftTeams.Interfaces
+  language: CSharp
+  name:
+    CSharp: MicrosoftTeams.Interfaces
+    VB: MicrosoftTeams.Interfaces
+  nameWithType:
+    CSharp: MicrosoftTeams.Interfaces
+    VB: MicrosoftTeams.Interfaces
+  qualifiedName:
+    CSharp: MicrosoftTeams.Interfaces
+    VB: MicrosoftTeams.Interfaces
+  type: Namespace
+  assemblies:
+  - MicrosoftTeams
+  modifiers: {}
+  items:
+  - id: MicrosoftTeams.Interfaces.IApplication
+    commentId: T:MicrosoftTeams.Interfaces.IApplication
+    language: CSharp
+    name:
+      CSharp: IApplication
+      VB: IApplication
+    nameWithType:
+      CSharp: IApplication
+      VB: IApplication
+    qualifiedName:
+      CSharp: MicrosoftTeams.Interfaces.IApplication
+      VB: MicrosoftTeams.Interfaces.IApplication
+    type: Interface
+    assemblies:
+    - MicrosoftTeams
+    namespace: MicrosoftTeams.Interfaces
+    source:
+      remote:
+        path: packages/MicrosoftTeams/Files/Interfaces/IApplication.cs
+        branch: master
+        repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+      id: IApplication
+      path: ../packages/MicrosoftTeams/Files/Interfaces/IApplication.cs
+      startLine: 5
+    summary: "\nMain Application\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public interface IApplication
+        VB: Public Interface IApplication
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items:
+    - id: MicrosoftTeams.Interfaces.IApplication.GetService``1
+      commentId: M:MicrosoftTeams.Interfaces.IApplication.GetService``1
+      language: CSharp
+      name:
+        CSharp: GetService<T>()
+        VB: GetService(Of T)()
+      nameWithType:
+        CSharp: IApplication.GetService<T>()
+        VB: IApplication.GetService(Of T)()
+      qualifiedName:
+        CSharp: MicrosoftTeams.Interfaces.IApplication.GetService<T>()
+        VB: MicrosoftTeams.Interfaces.IApplication.GetService(Of T)()
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams.Interfaces
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Interfaces/IApplication.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: GetService
+        path: ../packages/MicrosoftTeams/Files/Interfaces/IApplication.cs
+        startLine: 12
+      summary: "\nGets requested service from the application\n"
+      example: []
+      syntax:
+        content:
+          CSharp: T GetService<T>()
+          VB: Function GetService(Of T) As T
+        typeParameters:
+        - id: T
+          description: Service to get from the application
+        return:
+          type: '{T}'
+          description: ''
+      overload: MicrosoftTeams.Interfaces.IApplication.GetService*
+      modifiers:
+        CSharp: []
+        VB: []
+  - id: MicrosoftTeams.Interfaces.IBuilder`1
+    commentId: T:MicrosoftTeams.Interfaces.IBuilder`1
+    language: CSharp
+    name:
+      CSharp: IBuilder<TResult>
+      VB: IBuilder(Of TResult)
+    nameWithType:
+      CSharp: IBuilder<TResult>
+      VB: IBuilder(Of TResult)
+    qualifiedName:
+      CSharp: MicrosoftTeams.Interfaces.IBuilder<TResult>
+      VB: MicrosoftTeams.Interfaces.IBuilder(Of TResult)
+    type: Interface
+    assemblies:
+    - MicrosoftTeams
+    namespace: MicrosoftTeams.Interfaces
+    source:
+      remote:
+        path: packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+        branch: master
+        repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+      id: IBuilder
+      path: ../packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+      startLine: 10
+    summary: "\nAbstraction for application configuration\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public interface IBuilder<out TResult>
+        VB: Public Interface IBuilder(Of Out TResult)
+      typeParameters:
+      - id: TResult
+        description: Type of application to build
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items:
+    - id: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+      commentId: M:MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+      language: CSharp
+      name:
+        CSharp: ConfigureUserConnection(UserConnection)
+        VB: ConfigureUserConnection(UserConnection)
+      nameWithType:
+        CSharp: IBuilder<TResult>.ConfigureUserConnection(UserConnection)
+        VB: IBuilder(Of TResult).ConfigureUserConnection(UserConnection)
+      qualifiedName:
+        CSharp: MicrosoftTeams.Interfaces.IBuilder<TResult>.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+        VB: MicrosoftTeams.Interfaces.IBuilder(Of TResult).ConfigureUserConnection(Terrasoft.Core.UserConnection)
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams.Interfaces
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: ConfigureUserConnection
+        path: ../packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+        startLine: 21
+      summary: 'Stage: Configure UserConnection'
+      remarks: "\n<xref href=\"System.ArgumentNullException\" data-throw-if-not-resolved=\"false\"></xref> thrown when <code data-dev-comment-type=\"paramref\" class=\"paramref\">userConnection</code> is <xref uid=\"langword_csharp_null\" name=\"null\" href=\"\"></xref>\n"
+      example: []
+      syntax:
+        content:
+          CSharp: IStage2<TResult> ConfigureUserConnection(UserConnection userConnection)
+          VB: Function ConfigureUserConnection(userConnection As UserConnection) As IStage2(Of TResult)
+        parameters:
+        - id: userConnection
+          type: Terrasoft.Core.UserConnection
+          description: UserConnection
+        return:
+          type: MicrosoftTeams.Interfaces.IStage2{{TResult}}
+          description: Next Stage
+      overload: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection*
+      exceptions:
+      - type: System.ArgumentNullException
+        commentId: T:System.ArgumentNullException
+        description: "\nThrown when <code data-dev-comment-type=\"paramref\" class=\"paramref\">userConnection</code> is <xref uid=\"langword_csharp_null\" name=\"null\" href=\"\"></xref>\n"
+      modifiers:
+        CSharp: []
+        VB: []
+      references:
+        System.ArgumentNullException: 
+  - id: MicrosoftTeams.Interfaces.IStage2`1
+    commentId: T:MicrosoftTeams.Interfaces.IStage2`1
+    language: CSharp
+    name:
+      CSharp: IStage2<TResult>
+      VB: IStage2(Of TResult)
+    nameWithType:
+      CSharp: IStage2<TResult>
+      VB: IStage2(Of TResult)
+    qualifiedName:
+      CSharp: MicrosoftTeams.Interfaces.IStage2<TResult>
+      VB: MicrosoftTeams.Interfaces.IStage2(Of TResult)
+    type: Interface
+    assemblies:
+    - MicrosoftTeams
+    namespace: MicrosoftTeams.Interfaces
+    source:
+      remote:
+        path: packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+        branch: master
+        repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+      id: IStage2
+      path: ../packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+      startLine: 28
+    summary: "\nStage: Build Application\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public interface IStage2<out TResult>
+        VB: Public Interface IStage2(Of Out TResult)
+      typeParameters:
+      - id: TResult
+        description: Application to build
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items:
+    - id: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog)
+      commentId: M:MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog)
+      language: CSharp
+      name:
+        CSharp: ConfigureLogger(ILog)
+        VB: ConfigureLogger(ILog)
+      nameWithType:
+        CSharp: IStage2<TResult>.ConfigureLogger(ILog)
+        VB: IStage2(Of TResult).ConfigureLogger(ILog)
+      qualifiedName:
+        CSharp: MicrosoftTeams.Interfaces.IStage2<TResult>.ConfigureLogger(Common.Logging.ILog)
+        VB: MicrosoftTeams.Interfaces.IStage2(Of TResult).ConfigureLogger(Common.Logging.ILog)
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams.Interfaces
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: ConfigureLogger
+        path: ../packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+        startLine: 41
+      summary: "\nLogger to be associated with the application\n"
+      remarks: "\n<xref href=\"System.ArgumentNullException\" data-throw-if-not-resolved=\"false\"></xref> thrown when <code data-dev-comment-type=\"paramref\" class=\"paramref\">logger</code> is <xref uid=\"langword_csharp_null\" name=\"null\" href=\"\"></xref>\n"
+      example: []
+      syntax:
+        content:
+          CSharp: IStageBuild<TResult> ConfigureLogger(ILog logger)
+          VB: Function ConfigureLogger(logger As ILog) As IStageBuild(Of TResult)
+        parameters:
+        - id: logger
+          type: Common.Logging.ILog
+          description: ILogger
+        return:
+          type: MicrosoftTeams.Interfaces.IStageBuild{{TResult}}
+          description: Next Stage
+      overload: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger*
+      exceptions:
+      - type: System.ArgumentNullException
+        commentId: T:System.ArgumentNullException
+        description: "\nThrown when <code data-dev-comment-type=\"paramref\" class=\"paramref\">logger</code> is <xref uid=\"langword_csharp_null\" name=\"null\" href=\"\"></xref>\n"
+      modifiers:
+        CSharp: []
+        VB: []
+      references:
+        System.ArgumentNullException: 
+  - id: MicrosoftTeams.Interfaces.IStageBuild`1
+    commentId: T:MicrosoftTeams.Interfaces.IStageBuild`1
+    language: CSharp
+    name:
+      CSharp: IStageBuild<TResult>
+      VB: IStageBuild(Of TResult)
+    nameWithType:
+      CSharp: IStageBuild<TResult>
+      VB: IStageBuild(Of TResult)
+    qualifiedName:
+      CSharp: MicrosoftTeams.Interfaces.IStageBuild<TResult>
+      VB: MicrosoftTeams.Interfaces.IStageBuild(Of TResult)
+    type: Interface
+    assemblies:
+    - MicrosoftTeams
+    namespace: MicrosoftTeams.Interfaces
+    source:
+      remote:
+        path: packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+        branch: master
+        repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+      id: IStageBuild
+      path: ../packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+      startLine: 48
+    summary: "\nStage: Build Application\n"
+    example: []
+    syntax:
+      content:
+        CSharp: public interface IStageBuild<out TResult>
+        VB: Public Interface IStageBuild(Of Out TResult)
+      typeParameters:
+      - id: TResult
+        description: Application to build
+    modifiers:
+      CSharp:
+      - public
+      - interface
+      VB:
+      - Public
+      - Interface
+    items:
+    - id: MicrosoftTeams.Interfaces.IStageBuild`1.Build
+      commentId: M:MicrosoftTeams.Interfaces.IStageBuild`1.Build
+      language: CSharp
+      name:
+        CSharp: Build()
+        VB: Build()
+      nameWithType:
+        CSharp: IStageBuild<TResult>.Build()
+        VB: IStageBuild(Of TResult).Build()
+      qualifiedName:
+        CSharp: MicrosoftTeams.Interfaces.IStageBuild<TResult>.Build()
+        VB: MicrosoftTeams.Interfaces.IStageBuild(Of TResult).Build()
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosoftTeams.Interfaces
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: Build
+        path: ../packages/MicrosoftTeams/Files/Interfaces/IBuilder.cs
+        startLine: 54
+      summary: "\nBuild Application\n"
+      example: []
+      syntax:
+        content:
+          CSharp: TResult Build()
+          VB: Function Build As TResult
+        return:
+          type: '{TResult}'
+          description: Configured application
+      overload: MicrosoftTeams.Interfaces.IStageBuild`1.Build*
+      modifiers:
+        CSharp: []
+        VB: []
+- id: MicrosftTeams.WebServices
+  commentId: N:MicrosftTeams.WebServices
+  language: CSharp
+  name:
+    CSharp: MicrosftTeams.WebServices
+    VB: MicrosftTeams.WebServices
+  nameWithType:
+    CSharp: MicrosftTeams.WebServices
+    VB: MicrosftTeams.WebServices
+  qualifiedName:
+    CSharp: MicrosftTeams.WebServices
+    VB: MicrosftTeams.WebServices
+  type: Namespace
+  assemblies:
+  - MicrosoftTeams
+  modifiers: {}
+  items:
+  - id: MicrosftTeams.WebServices.DemoWebService
+    commentId: T:MicrosftTeams.WebServices.DemoWebService
+    language: CSharp
+    name:
+      CSharp: DemoWebService
+      VB: DemoWebService
+    nameWithType:
+      CSharp: DemoWebService
+      VB: DemoWebService
+    qualifiedName:
+      CSharp: MicrosftTeams.WebServices.DemoWebService
+      VB: MicrosftTeams.WebServices.DemoWebService
+    type: Class
+    assemblies:
+    - MicrosoftTeams
+    namespace: MicrosftTeams.WebServices
+    source:
+      remote:
+        path: packages/MicrosoftTeams/Files/WebServices/DemoWebService.cs
+        branch: master
+        repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+      id: DemoWebService
+      path: ../packages/MicrosoftTeams/Files/WebServices/DemoWebService.cs
+      startLine: 8
+    syntax:
+      content:
+        CSharp: >-
+          [ServiceContract]
+
+          [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
+
+          public class DemoWebService : BaseService
+        VB: >-
+          <ServiceContract>
+
+          <AspNetCompatibilityRequirements(RequirementsMode:=AspNetCompatibilityRequirementsMode.Required)>
+
+          Public Class DemoWebService
+
+              Inherits BaseService
+    inheritance:
+    - System.Object
+    - Terrasoft.Web.Common.BaseService
+    inheritedMembers:
+    - Terrasoft.Web.Common.BaseService.GetUserConnection
+    - Terrasoft.Web.Common.BaseService.UserIsAuthenticated
+    - Terrasoft.Web.Common.BaseService.AppConnection
+    - Terrasoft.Web.Common.BaseService.UserConnection
+    - Terrasoft.Web.Common.BaseService.Cache
+    - Terrasoft.Web.Common.BaseService.HttpContextAccessor
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    attributes:
+    - type: System.ServiceModel.ServiceContractAttribute
+      ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+      arguments: []
+    - type: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+      ctor: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor
+      arguments: []
+      namedArguments:
+      - name: RequirementsMode
+        type: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        value: 2
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: MicrosftTeams.WebServices.DemoWebService.GetExample
+      commentId: M:MicrosftTeams.WebServices.DemoWebService.GetExample
+      language: CSharp
+      name:
+        CSharp: GetExample()
+        VB: GetExample()
+      nameWithType:
+        CSharp: DemoWebService.GetExample()
+        VB: DemoWebService.GetExample()
+      qualifiedName:
+        CSharp: MicrosftTeams.WebServices.DemoWebService.GetExample()
+        VB: MicrosftTeams.WebServices.DemoWebService.GetExample()
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosftTeams.WebServices
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/WebServices/DemoWebService.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: GetExample
+        path: ../packages/MicrosoftTeams/Files/WebServices/DemoWebService.cs
+        startLine: 17
+      summary: "\n"
+      example: []
+      syntax:
+        content:
+          CSharp: >-
+            [OperationContract]
+
+            [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
+
+            public string GetExample()
+          VB: >-
+            <OperationContract>
+
+            <WebInvoke(Method:="GET", RequestFormat:=WebMessageFormat.Json, BodyStyle:=WebMessageBodyStyle.Wrapped, ResponseFormat:=WebMessageFormat.Json)>
+
+            Public Function GetExample As String
+        return:
+          type: System.String
+          description: ''
+      overload: MicrosftTeams.WebServices.DemoWebService.GetExample*
+      seealso:
+      - linkType: HRef
+        linkId: http://localhost:8050/0/rest/DemoWebService/GetExample
+        altText: example
+      attributes:
+      - type: System.ServiceModel.OperationContractAttribute
+        ctor: System.ServiceModel.OperationContractAttribute.#ctor
+        arguments: []
+      - type: System.ServiceModel.Web.WebInvokeAttribute
+        ctor: System.ServiceModel.Web.WebInvokeAttribute.#ctor
+        arguments: []
+        namedArguments:
+        - name: Method
+          type: System.String
+          value: GET
+        - name: RequestFormat
+          type: System.ServiceModel.Web.WebMessageFormat
+          value: 1
+        - name: BodyStyle
+          type: System.ServiceModel.Web.WebMessageBodyStyle
+          value: 1
+        - name: ResponseFormat
+          type: System.ServiceModel.Web.WebMessageFormat
+          value: 1
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+- id: MicrosftTeams.WebServices.OAuthHandler
+  commentId: N:MicrosftTeams.WebServices.OAuthHandler
+  language: CSharp
+  name:
+    CSharp: MicrosftTeams.WebServices.OAuthHandler
+    VB: MicrosftTeams.WebServices.OAuthHandler
+  nameWithType:
+    CSharp: MicrosftTeams.WebServices.OAuthHandler
+    VB: MicrosftTeams.WebServices.OAuthHandler
+  qualifiedName:
+    CSharp: MicrosftTeams.WebServices.OAuthHandler
+    VB: MicrosftTeams.WebServices.OAuthHandler
+  type: Namespace
+  assemblies:
+  - MicrosoftTeams
+  modifiers: {}
+  items:
+  - id: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+    commentId: T:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+    language: CSharp
+    name:
+      CSharp: OAuthHandlerService
+      VB: OAuthHandlerService
+    nameWithType:
+      CSharp: OAuthHandlerService
+      VB: OAuthHandlerService
+    qualifiedName:
+      CSharp: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+      VB: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+    type: Class
+    assemblies:
+    - MicrosoftTeams
+    namespace: MicrosftTeams.WebServices.OAuthHandler
+    source:
+      remote:
+        path: packages/MicrosoftTeams/Files/WebServices/OAuthHandlerService.cs
+        branch: master
+        repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+      id: OAuthHandlerService
+      path: ../packages/MicrosoftTeams/Files/WebServices/OAuthHandlerService.cs
+      startLine: 16
+    syntax:
+      content:
+        CSharp: >-
+          [ServiceContract]
+
+          [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
+
+          public class OAuthHandlerService : BaseService, IReadOnlySessionState, IRequiresSessionState
+        VB: >-
+          <ServiceContract>
+
+          <AspNetCompatibilityRequirements(RequirementsMode:=AspNetCompatibilityRequirementsMode.Required)>
+
+          Public Class OAuthHandlerService
+
+              Inherits BaseService
+
+              Implements IReadOnlySessionState, IRequiresSessionState
+    inheritance:
+    - System.Object
+    - Terrasoft.Web.Common.BaseService
+    implements:
+    - System.Web.SessionState.IReadOnlySessionState
+    - System.Web.SessionState.IRequiresSessionState
+    inheritedMembers:
+    - Terrasoft.Web.Common.BaseService.GetUserConnection
+    - Terrasoft.Web.Common.BaseService.UserIsAuthenticated
+    - Terrasoft.Web.Common.BaseService.AppConnection
+    - Terrasoft.Web.Common.BaseService.UserConnection
+    - Terrasoft.Web.Common.BaseService.Cache
+    - Terrasoft.Web.Common.BaseService.HttpContextAccessor
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    attributes:
+    - type: System.ServiceModel.ServiceContractAttribute
+      ctor: System.ServiceModel.ServiceContractAttribute.#ctor
+      arguments: []
+    - type: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+      ctor: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor
+      arguments: []
+      namedArguments:
+      - name: RequirementsMode
+        type: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        value: 2
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl
+      commentId: M:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl
+      language: CSharp
+      name:
+        CSharp: GetLoginUrl()
+        VB: GetLoginUrl()
+      nameWithType:
+        CSharp: OAuthHandlerService.GetLoginUrl()
+        VB: OAuthHandlerService.GetLoginUrl()
+      qualifiedName:
+        CSharp: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl()
+        VB: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl()
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosftTeams.WebServices.OAuthHandler
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/WebServices/OAuthHandlerService.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: GetLoginUrl
+        path: ../packages/MicrosoftTeams/Files/WebServices/OAuthHandlerService.cs
+        startLine: 22
+      syntax:
+        content:
+          CSharp: >-
+            [OperationContract]
+
+            [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json)]
+
+            public TeamsOAuthResponse GetLoginUrl()
+          VB: >-
+            <OperationContract>
+
+            <WebInvoke(Method:="POST", RequestFormat:=WebMessageFormat.Json, BodyStyle:=WebMessageBodyStyle.Bare, ResponseFormat:=WebMessageFormat.Json)>
+
+            Public Function GetLoginUrl As TeamsOAuthResponse
+        return:
+          type: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+      overload: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl*
+      attributes:
+      - type: System.ServiceModel.OperationContractAttribute
+        ctor: System.ServiceModel.OperationContractAttribute.#ctor
+        arguments: []
+      - type: System.ServiceModel.Web.WebInvokeAttribute
+        ctor: System.ServiceModel.Web.WebInvokeAttribute.#ctor
+        arguments: []
+        namedArguments:
+        - name: Method
+          type: System.String
+          value: POST
+        - name: RequestFormat
+          type: System.ServiceModel.Web.WebMessageFormat
+          value: 1
+        - name: BodyStyle
+          type: System.ServiceModel.Web.WebMessageBodyStyle
+          value: 0
+        - name: ResponseFormat
+          type: System.ServiceModel.Web.WebMessageFormat
+          value: 1
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback(System.String,System.String)
+      commentId: M:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback(System.String,System.String)
+      language: CSharp
+      name:
+        CSharp: OauthCallback(String, String)
+        VB: OauthCallback(String, String)
+      nameWithType:
+        CSharp: OAuthHandlerService.OauthCallback(String, String)
+        VB: OAuthHandlerService.OauthCallback(String, String)
+      qualifiedName:
+        CSharp: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback(System.String, System.String)
+        VB: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback(System.String, System.String)
+      type: Method
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosftTeams.WebServices.OAuthHandler
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/WebServices/OAuthHandlerService.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: OauthCallback
+        path: ../packages/MicrosoftTeams/Files/WebServices/OAuthHandlerService.cs
+        startLine: 49
+      summary: "\nExchange code for Token\n"
+      example: []
+      syntax:
+        content:
+          CSharp: >-
+            [OperationContract]
+
+            [WebInvoke(Method = "GET", RequestFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json)]
+
+            public string OauthCallback(string code, string session_state)
+          VB: >-
+            <OperationContract>
+
+            <WebInvoke(Method:="GET", RequestFormat:=WebMessageFormat.Json, BodyStyle:=WebMessageBodyStyle.Bare, ResponseFormat:=WebMessageFormat.Json)>
+
+            Public Function OauthCallback(code As String, session_state As String) As String
+        parameters:
+        - id: code
+          type: System.String
+          description: Code from MS Identity on success OAuth
+        - id: session_state
+          type: System.String
+          description: ''
+        return:
+          type: System.String
+          description: ''
+      overload: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback*
+      attributes:
+      - type: System.ServiceModel.OperationContractAttribute
+        ctor: System.ServiceModel.OperationContractAttribute.#ctor
+        arguments: []
+      - type: System.ServiceModel.Web.WebInvokeAttribute
+        ctor: System.ServiceModel.Web.WebInvokeAttribute.#ctor
+        arguments: []
+        namedArguments:
+        - name: Method
+          type: System.String
+          value: GET
+        - name: RequestFormat
+          type: System.ServiceModel.Web.WebMessageFormat
+          value: 1
+        - name: BodyStyle
+          type: System.ServiceModel.Web.WebMessageBodyStyle
+          value: 0
+        - name: ResponseFormat
+          type: System.ServiceModel.Web.WebMessageFormat
+          value: 1
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+    commentId: T:MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+    language: CSharp
+    name:
+      CSharp: TeamsOAuthResponse
+      VB: TeamsOAuthResponse
+    nameWithType:
+      CSharp: TeamsOAuthResponse
+      VB: TeamsOAuthResponse
+    qualifiedName:
+      CSharp: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+      VB: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+    type: Class
+    assemblies:
+    - MicrosoftTeams
+    namespace: MicrosftTeams.WebServices.OAuthHandler
+    source:
+      remote:
+        path: packages/MicrosoftTeams/Files/WebServices/OAuthHandlerService.cs
+        branch: master
+        repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+      id: TeamsOAuthResponse
+      path: ../packages/MicrosoftTeams/Files/WebServices/OAuthHandlerService.cs
+      startLine: 84
+    syntax:
+      content:
+        CSharp: >-
+          [DataContract]
+
+          public class TeamsOAuthResponse : BaseResponse
+        VB: >-
+          <DataContract>
+
+          Public Class TeamsOAuthResponse
+
+              Inherits BaseResponse
+    inheritance:
+    - System.Object
+    - Terrasoft.Core.ServiceModelContract.BaseResponse
+    - Terrasoft.Nui.ServiceModel.DataContract.BaseResponse
+    implements:
+    - ServiceStack.ServiceInterface.ServiceModel.IHasResponseStatus
+    inheritedMembers:
+    - Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.ResponseStatus
+    - Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.QueryId
+    - Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.RowsAffected
+    - Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.NextPrcElReady
+    - Terrasoft.Core.ServiceModelContract.BaseResponse.Success
+    - Terrasoft.Core.ServiceModelContract.BaseResponse.ErrorInfo
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    attributes:
+    - type: System.Runtime.Serialization.DataContractAttribute
+      ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+      arguments: []
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+      commentId: P:MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+      language: CSharp
+      name:
+        CSharp: LoginUrl
+        VB: LoginUrl
+      nameWithType:
+        CSharp: TeamsOAuthResponse.LoginUrl
+        VB: TeamsOAuthResponse.LoginUrl
+      qualifiedName:
+        CSharp: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+        VB: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+      type: Property
+      assemblies:
+      - MicrosoftTeams
+      namespace: MicrosftTeams.WebServices.OAuthHandler
+      source:
+        remote:
+          path: packages/MicrosoftTeams/Files/WebServices/OAuthHandlerService.cs
+          branch: master
+          repo: http://tscore-git.tscrm.com/marketplace/microsoftteams.git
+        id: LoginUrl
+        path: ../packages/MicrosoftTeams/Files/WebServices/OAuthHandlerService.cs
+        startLine: 87
+      syntax:
+        content:
+          CSharp: >-
+            [DataMember(Name = "LoginUrl")]
+
+            public string LoginUrl { get; set; }
+          VB: >-
+            <DataMember(Name:="LoginUrl")>
+
+            Public Property LoginUrl As String
+        parameters: []
+        return:
+          type: System.String
+      overload: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl*
+      attributes:
+      - type: System.Runtime.Serialization.DataMemberAttribute
+        ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+        arguments: []
+        namedArguments:
+        - name: Name
+          type: System.String
+          value: LoginUrl
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Object
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        nameWithType: Object.ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ToString
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object)
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        nameWithType: Object.Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.Equals(System.Object,System.Object)
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        nameWithType: Object.ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        nameWithType: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        nameWithType: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        nameWithType: Object.GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetHashCode
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        nameWithType: Object.GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.GetType
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        nameWithType: Object.MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+    commentId: M:System.Object.MemberwiseClone
+  MicrosoftTeams.Interfaces.IBuilder`1:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IBuilder`1
+        name: IBuilder
+        nameWithType: IBuilder
+        qualifiedName: MicrosoftTeams.Interfaces.IBuilder
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: MicrosoftTeams.Interfaces.IBuilder`1
+        name: IBuilder
+        nameWithType: IBuilder
+        qualifiedName: MicrosoftTeams.Interfaces.IBuilder
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:MicrosoftTeams.Interfaces.IBuilder`1
+  MicrosoftTeams.Interfaces:
+    name:
+      CSharp:
+      - name: MicrosoftTeams.Interfaces
+        nameWithType: MicrosoftTeams.Interfaces
+        qualifiedName: MicrosoftTeams.Interfaces
+      VB:
+      - name: MicrosoftTeams.Interfaces
+        nameWithType: MicrosoftTeams.Interfaces
+        qualifiedName: MicrosoftTeams.Interfaces
+    isDefinition: true
+    commentId: N:MicrosoftTeams.Interfaces
+  MicrosoftTeams.Interfaces.IBuilder{MicrosoftTeams.Interfaces.IApplication}:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IBuilder`1
+        name: IBuilder
+        nameWithType: IBuilder
+        qualifiedName: MicrosoftTeams.Interfaces.IBuilder
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: MicrosoftTeams.Interfaces.IApplication
+        name: IApplication
+        nameWithType: IApplication
+        qualifiedName: MicrosoftTeams.Interfaces.IApplication
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: MicrosoftTeams.Interfaces.IBuilder`1
+        name: IBuilder
+        nameWithType: IBuilder
+        qualifiedName: MicrosoftTeams.Interfaces.IBuilder
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: MicrosoftTeams.Interfaces.IApplication
+        name: IApplication
+        nameWithType: IApplication
+        qualifiedName: MicrosoftTeams.Interfaces.IApplication
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: MicrosoftTeams.Interfaces.IBuilder`1
+    parent: MicrosoftTeams.Interfaces
+    commentId: T:MicrosoftTeams.Interfaces.IBuilder{MicrosoftTeams.Interfaces.IApplication}
+  MicrosoftTeams.Interfaces.IStage2`1:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStage2`1
+        name: IStage2
+        nameWithType: IStage2
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStage2`1
+        name: IStage2
+        nameWithType: IStage2
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:MicrosoftTeams.Interfaces.IStage2`1
+  MicrosoftTeams.Interfaces.IStage2{MicrosoftTeams.Interfaces.IApplication}:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStage2`1
+        name: IStage2
+        nameWithType: IStage2
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: MicrosoftTeams.Interfaces.IApplication
+        name: IApplication
+        nameWithType: IApplication
+        qualifiedName: MicrosoftTeams.Interfaces.IApplication
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStage2`1
+        name: IStage2
+        nameWithType: IStage2
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: MicrosoftTeams.Interfaces.IApplication
+        name: IApplication
+        nameWithType: IApplication
+        qualifiedName: MicrosoftTeams.Interfaces.IApplication
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: MicrosoftTeams.Interfaces.IStage2`1
+    parent: MicrosoftTeams.Interfaces
+    commentId: T:MicrosoftTeams.Interfaces.IStage2{MicrosoftTeams.Interfaces.IApplication}
+  MicrosoftTeams.Interfaces.IStageBuild`1:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1
+        name: IStageBuild
+        nameWithType: IStageBuild
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1
+        name: IStageBuild
+        nameWithType: IStageBuild
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: T:MicrosoftTeams.Interfaces.IStageBuild`1
+  MicrosoftTeams.Interfaces.IStageBuild{MicrosoftTeams.Interfaces.IApplication}:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1
+        name: IStageBuild
+        nameWithType: IStageBuild
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - id: MicrosoftTeams.Interfaces.IApplication
+        name: IApplication
+        nameWithType: IApplication
+        qualifiedName: MicrosoftTeams.Interfaces.IApplication
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1
+        name: IStageBuild
+        nameWithType: IStageBuild
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - id: MicrosoftTeams.Interfaces.IApplication
+        name: IApplication
+        nameWithType: IApplication
+        qualifiedName: MicrosoftTeams.Interfaces.IApplication
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: MicrosoftTeams.Interfaces.IStageBuild`1
+    parent: MicrosoftTeams.Interfaces
+    commentId: T:MicrosoftTeams.Interfaces.IStageBuild{MicrosoftTeams.Interfaces.IApplication}
+  Terrasoft.Core:
+    name:
+      CSharp:
+      - name: Terrasoft.Core
+        nameWithType: Terrasoft.Core
+        qualifiedName: Terrasoft.Core
+        isExternal: true
+      VB:
+      - name: Terrasoft.Core
+        nameWithType: Terrasoft.Core
+        qualifiedName: Terrasoft.Core
+    isDefinition: true
+    commentId: N:Terrasoft.Core
+  Terrasoft.Core.UserConnection:
+    name:
+      CSharp:
+      - id: Terrasoft.Core.UserConnection
+        name: UserConnection
+        nameWithType: UserConnection
+        qualifiedName: Terrasoft.Core.UserConnection
+        isExternal: true
+      VB:
+      - id: Terrasoft.Core.UserConnection
+        name: UserConnection
+        nameWithType: UserConnection
+        qualifiedName: Terrasoft.Core.UserConnection
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Core
+    commentId: T:Terrasoft.Core.UserConnection
+  MicrosoftTeams.Builder.ConfigureUserConnection*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Builder.ConfigureUserConnection*
+        name: ConfigureUserConnection
+        nameWithType: Builder.ConfigureUserConnection
+        qualifiedName: MicrosoftTeams.Builder.ConfigureUserConnection
+      VB:
+      - id: MicrosoftTeams.Builder.ConfigureUserConnection*
+        name: ConfigureUserConnection
+        nameWithType: Builder.ConfigureUserConnection
+        qualifiedName: MicrosoftTeams.Builder.ConfigureUserConnection
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Builder.ConfigureUserConnection
+  MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection):
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+        name: ConfigureUserConnection
+        nameWithType: IBuilder<TResult>.ConfigureUserConnection
+        qualifiedName: MicrosoftTeams.Interfaces.IBuilder<TResult>.ConfigureUserConnection
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Terrasoft.Core.UserConnection
+        name: UserConnection
+        nameWithType: UserConnection
+        qualifiedName: Terrasoft.Core.UserConnection
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+        name: ConfigureUserConnection
+        nameWithType: IBuilder(Of TResult).ConfigureUserConnection
+        qualifiedName: MicrosoftTeams.Interfaces.IBuilder(Of TResult).ConfigureUserConnection
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Terrasoft.Core.UserConnection
+        name: UserConnection
+        nameWithType: UserConnection
+        qualifiedName: Terrasoft.Core.UserConnection
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+  ? MicrosoftTeams.Interfaces.IBuilder{MicrosoftTeams.Interfaces.IApplication}.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+  : name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+        name: ConfigureUserConnection
+        nameWithType: IBuilder<IApplication>.ConfigureUserConnection
+        qualifiedName: MicrosoftTeams.Interfaces.IBuilder<MicrosoftTeams.Interfaces.IApplication>.ConfigureUserConnection
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Terrasoft.Core.UserConnection
+        name: UserConnection
+        nameWithType: UserConnection
+        qualifiedName: Terrasoft.Core.UserConnection
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+        name: ConfigureUserConnection
+        nameWithType: IBuilder(Of IApplication).ConfigureUserConnection
+        qualifiedName: MicrosoftTeams.Interfaces.IBuilder(Of MicrosoftTeams.Interfaces.IApplication).ConfigureUserConnection
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Terrasoft.Core.UserConnection
+        name: UserConnection
+        nameWithType: UserConnection
+        qualifiedName: Terrasoft.Core.UserConnection
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+    parent: MicrosoftTeams.Interfaces.IBuilder{MicrosoftTeams.Interfaces.IApplication}
+    commentId: M:MicrosoftTeams.Interfaces.IBuilder{MicrosoftTeams.Interfaces.IApplication}.ConfigureUserConnection(Terrasoft.Core.UserConnection)
+  Common.Logging:
+    name:
+      CSharp:
+      - name: Common.Logging
+        nameWithType: Common.Logging
+        qualifiedName: Common.Logging
+        isExternal: true
+      VB:
+      - name: Common.Logging
+        nameWithType: Common.Logging
+        qualifiedName: Common.Logging
+    isDefinition: true
+    commentId: N:Common.Logging
+  Common.Logging.ILog:
+    name:
+      CSharp:
+      - id: Common.Logging.ILog
+        name: ILog
+        nameWithType: ILog
+        qualifiedName: Common.Logging.ILog
+        isExternal: true
+      VB:
+      - id: Common.Logging.ILog
+        name: ILog
+        nameWithType: ILog
+        qualifiedName: Common.Logging.ILog
+        isExternal: true
+    isDefinition: true
+    parent: Common.Logging
+    commentId: T:Common.Logging.ILog
+  MicrosoftTeams.Builder.ConfigureLogger*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Builder.ConfigureLogger*
+        name: ConfigureLogger
+        nameWithType: Builder.ConfigureLogger
+        qualifiedName: MicrosoftTeams.Builder.ConfigureLogger
+      VB:
+      - id: MicrosoftTeams.Builder.ConfigureLogger*
+        name: ConfigureLogger
+        nameWithType: Builder.ConfigureLogger
+        qualifiedName: MicrosoftTeams.Builder.ConfigureLogger
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Builder.ConfigureLogger
+  MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog):
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog)
+        name: ConfigureLogger
+        nameWithType: IStage2<TResult>.ConfigureLogger
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2<TResult>.ConfigureLogger
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Common.Logging.ILog
+        name: ILog
+        nameWithType: ILog
+        qualifiedName: Common.Logging.ILog
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog)
+        name: ConfigureLogger
+        nameWithType: IStage2(Of TResult).ConfigureLogger
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2(Of TResult).ConfigureLogger
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Common.Logging.ILog
+        name: ILog
+        nameWithType: ILog
+        qualifiedName: Common.Logging.ILog
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog)
+  MicrosoftTeams.Interfaces.IStage2{MicrosoftTeams.Interfaces.IApplication}.ConfigureLogger(Common.Logging.ILog):
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog)
+        name: ConfigureLogger
+        nameWithType: IStage2<IApplication>.ConfigureLogger
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2<MicrosoftTeams.Interfaces.IApplication>.ConfigureLogger
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Common.Logging.ILog
+        name: ILog
+        nameWithType: ILog
+        qualifiedName: Common.Logging.ILog
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog)
+        name: ConfigureLogger
+        nameWithType: IStage2(Of IApplication).ConfigureLogger
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2(Of MicrosoftTeams.Interfaces.IApplication).ConfigureLogger
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: Common.Logging.ILog
+        name: ILog
+        nameWithType: ILog
+        qualifiedName: Common.Logging.ILog
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger(Common.Logging.ILog)
+    parent: MicrosoftTeams.Interfaces.IStage2{MicrosoftTeams.Interfaces.IApplication}
+    commentId: M:MicrosoftTeams.Interfaces.IStage2{MicrosoftTeams.Interfaces.IApplication}.ConfigureLogger(Common.Logging.ILog)
+  MicrosoftTeams.Interfaces.IApplication:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IApplication
+        name: IApplication
+        nameWithType: IApplication
+        qualifiedName: MicrosoftTeams.Interfaces.IApplication
+      VB:
+      - id: MicrosoftTeams.Interfaces.IApplication
+        name: IApplication
+        nameWithType: IApplication
+        qualifiedName: MicrosoftTeams.Interfaces.IApplication
+    isDefinition: true
+    parent: MicrosoftTeams.Interfaces
+    commentId: T:MicrosoftTeams.Interfaces.IApplication
+  MicrosoftTeams.Builder.Build*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Builder.Build*
+        name: Build
+        nameWithType: Builder.Build
+        qualifiedName: MicrosoftTeams.Builder.Build
+      VB:
+      - id: MicrosoftTeams.Builder.Build*
+        name: Build
+        nameWithType: Builder.Build
+        qualifiedName: MicrosoftTeams.Builder.Build
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Builder.Build
+  MicrosoftTeams.Interfaces.IStageBuild`1.Build:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1.Build
+        name: Build
+        nameWithType: IStageBuild<TResult>.Build
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild<TResult>.Build
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1.Build
+        name: Build
+        nameWithType: IStageBuild(Of TResult).Build
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild(Of TResult).Build
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    commentId: M:MicrosoftTeams.Interfaces.IStageBuild`1.Build
+  MicrosoftTeams.Interfaces.IStageBuild{MicrosoftTeams.Interfaces.IApplication}.Build:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1.Build
+        name: Build
+        nameWithType: IStageBuild<IApplication>.Build
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild<MicrosoftTeams.Interfaces.IApplication>.Build
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1.Build
+        name: Build
+        nameWithType: IStageBuild(Of IApplication).Build
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild(Of MicrosoftTeams.Interfaces.IApplication).Build
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: MicrosoftTeams.Interfaces.IStageBuild`1.Build
+    parent: MicrosoftTeams.Interfaces.IStageBuild{MicrosoftTeams.Interfaces.IApplication}
+    commentId: M:MicrosoftTeams.Interfaces.IStageBuild{MicrosoftTeams.Interfaces.IApplication}.Build
+  MicrosoftTeams.Builder:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Builder
+        name: Builder
+        nameWithType: Builder
+        qualifiedName: MicrosoftTeams.Builder
+      VB:
+      - id: MicrosoftTeams.Builder
+        name: Builder
+        nameWithType: Builder
+        qualifiedName: MicrosoftTeams.Builder
+    isDefinition: true
+    commentId: T:MicrosoftTeams.Builder
+  Terrasoft.Core.Factories:
+    name:
+      CSharp:
+      - name: Terrasoft.Core.Factories
+        nameWithType: Terrasoft.Core.Factories
+        qualifiedName: Terrasoft.Core.Factories
+        isExternal: true
+      VB:
+      - name: Terrasoft.Core.Factories
+        nameWithType: Terrasoft.Core.Factories
+        qualifiedName: Terrasoft.Core.Factories
+    isDefinition: true
+    commentId: N:Terrasoft.Core.Factories
+  Terrasoft.Core.Factories.DefaultBindingAttribute:
+    name:
+      CSharp:
+      - id: Terrasoft.Core.Factories.DefaultBindingAttribute
+        name: DefaultBindingAttribute
+        nameWithType: DefaultBindingAttribute
+        qualifiedName: Terrasoft.Core.Factories.DefaultBindingAttribute
+        isExternal: true
+      VB:
+      - id: Terrasoft.Core.Factories.DefaultBindingAttribute
+        name: DefaultBindingAttribute
+        nameWithType: DefaultBindingAttribute
+        qualifiedName: Terrasoft.Core.Factories.DefaultBindingAttribute
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Core.Factories
+    commentId: T:Terrasoft.Core.Factories.DefaultBindingAttribute
+  Terrasoft.Core.Factories.DefaultBindingAttribute.#ctor(System.Type):
+    name:
+      CSharp:
+      - id: Terrasoft.Core.Factories.DefaultBindingAttribute.#ctor(System.Type)
+        name: DefaultBindingAttribute
+        nameWithType: DefaultBindingAttribute.DefaultBindingAttribute
+        qualifiedName: Terrasoft.Core.Factories.DefaultBindingAttribute.DefaultBindingAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: Terrasoft.Core.Factories.DefaultBindingAttribute.#ctor(System.Type)
+        name: DefaultBindingAttribute
+        nameWithType: DefaultBindingAttribute.DefaultBindingAttribute
+        qualifiedName: Terrasoft.Core.Factories.DefaultBindingAttribute.DefaultBindingAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: Terrasoft.Core.Factories.DefaultBindingAttribute
+    commentId: M:Terrasoft.Core.Factories.DefaultBindingAttribute.#ctor(System.Type)
+  System.Type:
+    name:
+      CSharp:
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+      VB:
+      - id: System.Type
+        name: Type
+        nameWithType: Type
+        qualifiedName: System.Type
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Type
+  MicrosoftTeams:
+    name:
+      CSharp:
+      - name: MicrosoftTeams
+        nameWithType: MicrosoftTeams
+        qualifiedName: MicrosoftTeams
+      VB:
+      - name: MicrosoftTeams
+        nameWithType: MicrosoftTeams
+        qualifiedName: MicrosoftTeams
+    isDefinition: true
+    commentId: N:MicrosoftTeams
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  MicrosoftTeams.Dto.Token.TokenType*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Dto.Token.TokenType*
+        name: TokenType
+        nameWithType: Token.TokenType
+        qualifiedName: MicrosoftTeams.Dto.Token.TokenType
+      VB:
+      - id: MicrosoftTeams.Dto.Token.TokenType*
+        name: TokenType
+        nameWithType: Token.TokenType
+        qualifiedName: MicrosoftTeams.Dto.Token.TokenType
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Dto.Token.TokenType
+  Newtonsoft.Json:
+    name:
+      CSharp:
+      - name: Newtonsoft.Json
+        nameWithType: Newtonsoft.Json
+        qualifiedName: Newtonsoft.Json
+        isExternal: true
+      VB:
+      - name: Newtonsoft.Json
+        nameWithType: Newtonsoft.Json
+        qualifiedName: Newtonsoft.Json
+    isDefinition: true
+    commentId: N:Newtonsoft.Json
+  Newtonsoft.Json.JsonPropertyAttribute:
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonPropertyAttribute
+        name: JsonPropertyAttribute
+        nameWithType: JsonPropertyAttribute
+        qualifiedName: Newtonsoft.Json.JsonPropertyAttribute
+        isExternal: true
+      VB:
+      - id: Newtonsoft.Json.JsonPropertyAttribute
+        name: JsonPropertyAttribute
+        nameWithType: JsonPropertyAttribute
+        qualifiedName: Newtonsoft.Json.JsonPropertyAttribute
+        isExternal: true
+    isDefinition: true
+    parent: Newtonsoft.Json
+    commentId: T:Newtonsoft.Json.JsonPropertyAttribute
+  Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String):
+    name:
+      CSharp:
+      - id: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+        name: JsonPropertyAttribute
+        nameWithType: JsonPropertyAttribute.JsonPropertyAttribute
+        qualifiedName: Newtonsoft.Json.JsonPropertyAttribute.JsonPropertyAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+        name: JsonPropertyAttribute
+        nameWithType: JsonPropertyAttribute.JsonPropertyAttribute
+        qualifiedName: Newtonsoft.Json.JsonPropertyAttribute.JsonPropertyAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: Newtonsoft.Json.JsonPropertyAttribute
+    commentId: M:Newtonsoft.Json.JsonPropertyAttribute.#ctor(System.String)
+  MicrosoftTeams.Dto.Token.Scope*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Dto.Token.Scope*
+        name: Scope
+        nameWithType: Token.Scope
+        qualifiedName: MicrosoftTeams.Dto.Token.Scope
+      VB:
+      - id: MicrosoftTeams.Dto.Token.Scope*
+        name: Scope
+        nameWithType: Token.Scope
+        qualifiedName: MicrosoftTeams.Dto.Token.Scope
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Dto.Token.Scope
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  MicrosoftTeams.Dto.Token.ExpiresIn*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Dto.Token.ExpiresIn*
+        name: ExpiresIn
+        nameWithType: Token.ExpiresIn
+        qualifiedName: MicrosoftTeams.Dto.Token.ExpiresIn
+      VB:
+      - id: MicrosoftTeams.Dto.Token.ExpiresIn*
+        name: ExpiresIn
+        nameWithType: Token.ExpiresIn
+        qualifiedName: MicrosoftTeams.Dto.Token.ExpiresIn
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Dto.Token.ExpiresIn
+  MicrosoftTeams.Dto.Token.AccessToken*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Dto.Token.AccessToken*
+        name: AccessToken
+        nameWithType: Token.AccessToken
+        qualifiedName: MicrosoftTeams.Dto.Token.AccessToken
+      VB:
+      - id: MicrosoftTeams.Dto.Token.AccessToken*
+        name: AccessToken
+        nameWithType: Token.AccessToken
+        qualifiedName: MicrosoftTeams.Dto.Token.AccessToken
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Dto.Token.AccessToken
+  MicrosoftTeams.Dto.Token.RefreshToken*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Dto.Token.RefreshToken*
+        name: RefreshToken
+        nameWithType: Token.RefreshToken
+        qualifiedName: MicrosoftTeams.Dto.Token.RefreshToken
+      VB:
+      - id: MicrosoftTeams.Dto.Token.RefreshToken*
+        name: RefreshToken
+        nameWithType: Token.RefreshToken
+        qualifiedName: MicrosoftTeams.Dto.Token.RefreshToken
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Dto.Token.RefreshToken
+  MicrosoftTeams.Dto.Token:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Dto.Token
+        name: Token
+        nameWithType: Token
+        qualifiedName: MicrosoftTeams.Dto.Token
+      VB:
+      - id: MicrosoftTeams.Dto.Token
+        name: Token
+        nameWithType: Token
+        qualifiedName: MicrosoftTeams.Dto.Token
+    isDefinition: true
+    commentId: T:MicrosoftTeams.Dto.Token
+  MicrosoftTeams.Dto:
+    name:
+      CSharp:
+      - name: MicrosoftTeams.Dto
+        nameWithType: MicrosoftTeams.Dto
+        qualifiedName: MicrosoftTeams.Dto
+      VB:
+      - name: MicrosoftTeams.Dto
+        nameWithType: MicrosoftTeams.Dto
+        qualifiedName: MicrosoftTeams.Dto
+    isDefinition: true
+    commentId: N:MicrosoftTeams.Dto
+  T:
+    name:
+      CSharp:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      VB:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+    isDefinition: true
+    commentId: '!:T'
+  '{T}':
+    name:
+      CSharp:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+      VB:
+      - name: T
+        nameWithType: T
+        qualifiedName: T
+    isDefinition: false
+    definition: T
+    commentId: '!:T'
+  MicrosoftTeams.Interfaces.IApplication.GetService*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IApplication.GetService*
+        name: GetService
+        nameWithType: IApplication.GetService
+        qualifiedName: MicrosoftTeams.Interfaces.IApplication.GetService
+      VB:
+      - id: MicrosoftTeams.Interfaces.IApplication.GetService*
+        name: GetService
+        nameWithType: IApplication.GetService
+        qualifiedName: MicrosoftTeams.Interfaces.IApplication.GetService
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Interfaces.IApplication.GetService
+  System.ArgumentNullException:
+    commentId: T:System.ArgumentNullException
+  MicrosoftTeams.Interfaces.IStage2{{TResult}}:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStage2`1
+        name: IStage2
+        nameWithType: IStage2
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStage2`1
+        name: IStage2
+        nameWithType: IStage2
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: MicrosoftTeams.Interfaces.IStage2`1
+    parent: MicrosoftTeams.Interfaces
+    commentId: T:MicrosoftTeams.Interfaces.IStage2{`0}
+  MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection*
+        name: ConfigureUserConnection
+        nameWithType: IBuilder<TResult>.ConfigureUserConnection
+        qualifiedName: MicrosoftTeams.Interfaces.IBuilder<TResult>.ConfigureUserConnection
+      VB:
+      - id: MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection*
+        name: ConfigureUserConnection
+        nameWithType: IBuilder(Of TResult).ConfigureUserConnection
+        qualifiedName: MicrosoftTeams.Interfaces.IBuilder(Of TResult).ConfigureUserConnection
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Interfaces.IBuilder`1.ConfigureUserConnection
+  MicrosoftTeams.Interfaces.IStageBuild{{TResult}}:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1
+        name: IStageBuild
+        nameWithType: IStageBuild
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild
+      - name: <
+        nameWithType: <
+        qualifiedName: <
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: '>'
+        nameWithType: '>'
+        qualifiedName: '>'
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1
+        name: IStageBuild
+        nameWithType: IStageBuild
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild
+      - name: '(Of '
+        nameWithType: '(Of '
+        qualifiedName: '(Of '
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: false
+    definition: MicrosoftTeams.Interfaces.IStageBuild`1
+    parent: MicrosoftTeams.Interfaces
+    commentId: T:MicrosoftTeams.Interfaces.IStageBuild{`0}
+  MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger*
+        name: ConfigureLogger
+        nameWithType: IStage2<TResult>.ConfigureLogger
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2<TResult>.ConfigureLogger
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger*
+        name: ConfigureLogger
+        nameWithType: IStage2(Of TResult).ConfigureLogger
+        qualifiedName: MicrosoftTeams.Interfaces.IStage2(Of TResult).ConfigureLogger
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Interfaces.IStage2`1.ConfigureLogger
+  TResult:
+    name:
+      CSharp:
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      VB:
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+    isDefinition: true
+    commentId: '!:TResult'
+  '{TResult}':
+    name:
+      CSharp:
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+      VB:
+      - name: TResult
+        nameWithType: TResult
+        qualifiedName: TResult
+    isDefinition: false
+    definition: TResult
+    commentId: '!:TResult'
+  MicrosoftTeams.Interfaces.IStageBuild`1.Build*:
+    name:
+      CSharp:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1.Build*
+        name: Build
+        nameWithType: IStageBuild<TResult>.Build
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild<TResult>.Build
+      VB:
+      - id: MicrosoftTeams.Interfaces.IStageBuild`1.Build*
+        name: Build
+        nameWithType: IStageBuild(Of TResult).Build
+        qualifiedName: MicrosoftTeams.Interfaces.IStageBuild(Of TResult).Build
+    isDefinition: true
+    commentId: Overload:MicrosoftTeams.Interfaces.IStageBuild`1.Build
+  Terrasoft.Web.Common:
+    name:
+      CSharp:
+      - name: Terrasoft.Web.Common
+        nameWithType: Terrasoft.Web.Common
+        qualifiedName: Terrasoft.Web.Common
+        isExternal: true
+      VB:
+      - name: Terrasoft.Web.Common
+        nameWithType: Terrasoft.Web.Common
+        qualifiedName: Terrasoft.Web.Common
+    isDefinition: true
+    commentId: N:Terrasoft.Web.Common
+  Terrasoft.Web.Common.BaseService:
+    name:
+      CSharp:
+      - id: Terrasoft.Web.Common.BaseService
+        name: BaseService
+        nameWithType: BaseService
+        qualifiedName: Terrasoft.Web.Common.BaseService
+        isExternal: true
+      VB:
+      - id: Terrasoft.Web.Common.BaseService
+        name: BaseService
+        nameWithType: BaseService
+        qualifiedName: Terrasoft.Web.Common.BaseService
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Web.Common
+    commentId: T:Terrasoft.Web.Common.BaseService
+  Terrasoft.Web.Common.BaseService.GetUserConnection:
+    name:
+      CSharp:
+      - id: Terrasoft.Web.Common.BaseService.GetUserConnection
+        name: GetUserConnection
+        nameWithType: BaseService.GetUserConnection
+        qualifiedName: Terrasoft.Web.Common.BaseService.GetUserConnection
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: Terrasoft.Web.Common.BaseService.GetUserConnection
+        name: GetUserConnection
+        nameWithType: BaseService.GetUserConnection
+        qualifiedName: Terrasoft.Web.Common.BaseService.GetUserConnection
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: Terrasoft.Web.Common.BaseService
+    commentId: M:Terrasoft.Web.Common.BaseService.GetUserConnection
+  Terrasoft.Web.Common.BaseService.UserIsAuthenticated:
+    name:
+      CSharp:
+      - id: Terrasoft.Web.Common.BaseService.UserIsAuthenticated
+        name: UserIsAuthenticated
+        nameWithType: BaseService.UserIsAuthenticated
+        qualifiedName: Terrasoft.Web.Common.BaseService.UserIsAuthenticated
+        isExternal: true
+      VB:
+      - id: Terrasoft.Web.Common.BaseService.UserIsAuthenticated
+        name: UserIsAuthenticated
+        nameWithType: BaseService.UserIsAuthenticated
+        qualifiedName: Terrasoft.Web.Common.BaseService.UserIsAuthenticated
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Web.Common.BaseService
+    commentId: P:Terrasoft.Web.Common.BaseService.UserIsAuthenticated
+  Terrasoft.Web.Common.BaseService.AppConnection:
+    name:
+      CSharp:
+      - id: Terrasoft.Web.Common.BaseService.AppConnection
+        name: AppConnection
+        nameWithType: BaseService.AppConnection
+        qualifiedName: Terrasoft.Web.Common.BaseService.AppConnection
+        isExternal: true
+      VB:
+      - id: Terrasoft.Web.Common.BaseService.AppConnection
+        name: AppConnection
+        nameWithType: BaseService.AppConnection
+        qualifiedName: Terrasoft.Web.Common.BaseService.AppConnection
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Web.Common.BaseService
+    commentId: P:Terrasoft.Web.Common.BaseService.AppConnection
+  Terrasoft.Web.Common.BaseService.UserConnection:
+    name:
+      CSharp:
+      - id: Terrasoft.Web.Common.BaseService.UserConnection
+        name: UserConnection
+        nameWithType: BaseService.UserConnection
+        qualifiedName: Terrasoft.Web.Common.BaseService.UserConnection
+        isExternal: true
+      VB:
+      - id: Terrasoft.Web.Common.BaseService.UserConnection
+        name: UserConnection
+        nameWithType: BaseService.UserConnection
+        qualifiedName: Terrasoft.Web.Common.BaseService.UserConnection
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Web.Common.BaseService
+    commentId: P:Terrasoft.Web.Common.BaseService.UserConnection
+  Terrasoft.Web.Common.BaseService.Cache:
+    name:
+      CSharp:
+      - id: Terrasoft.Web.Common.BaseService.Cache
+        name: Cache
+        nameWithType: BaseService.Cache
+        qualifiedName: Terrasoft.Web.Common.BaseService.Cache
+        isExternal: true
+      VB:
+      - id: Terrasoft.Web.Common.BaseService.Cache
+        name: Cache
+        nameWithType: BaseService.Cache
+        qualifiedName: Terrasoft.Web.Common.BaseService.Cache
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Web.Common.BaseService
+    commentId: P:Terrasoft.Web.Common.BaseService.Cache
+  Terrasoft.Web.Common.BaseService.HttpContextAccessor:
+    name:
+      CSharp:
+      - id: Terrasoft.Web.Common.BaseService.HttpContextAccessor
+        name: HttpContextAccessor
+        nameWithType: BaseService.HttpContextAccessor
+        qualifiedName: Terrasoft.Web.Common.BaseService.HttpContextAccessor
+        isExternal: true
+      VB:
+      - id: Terrasoft.Web.Common.BaseService.HttpContextAccessor
+        name: HttpContextAccessor
+        nameWithType: BaseService.HttpContextAccessor
+        qualifiedName: Terrasoft.Web.Common.BaseService.HttpContextAccessor
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Web.Common.BaseService
+    commentId: P:Terrasoft.Web.Common.BaseService.HttpContextAccessor
+  MicrosftTeams.WebServices.DemoWebService.GetExample*:
+    name:
+      CSharp:
+      - id: MicrosftTeams.WebServices.DemoWebService.GetExample*
+        name: GetExample
+        nameWithType: DemoWebService.GetExample
+        qualifiedName: MicrosftTeams.WebServices.DemoWebService.GetExample
+      VB:
+      - id: MicrosftTeams.WebServices.DemoWebService.GetExample*
+        name: GetExample
+        nameWithType: DemoWebService.GetExample
+        qualifiedName: MicrosftTeams.WebServices.DemoWebService.GetExample
+    isDefinition: true
+    commentId: Overload:MicrosftTeams.WebServices.DemoWebService.GetExample
+  System.ServiceModel:
+    name:
+      CSharp:
+      - name: System.ServiceModel
+        nameWithType: System.ServiceModel
+        qualifiedName: System.ServiceModel
+        isExternal: true
+      VB:
+      - name: System.ServiceModel
+        nameWithType: System.ServiceModel
+        qualifiedName: System.ServiceModel
+    isDefinition: true
+    commentId: N:System.ServiceModel
+  System.ServiceModel.OperationContractAttribute:
+    name:
+      CSharp:
+      - id: System.ServiceModel.OperationContractAttribute
+        name: OperationContractAttribute
+        nameWithType: OperationContractAttribute
+        qualifiedName: System.ServiceModel.OperationContractAttribute
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.OperationContractAttribute
+        name: OperationContractAttribute
+        nameWithType: OperationContractAttribute
+        qualifiedName: System.ServiceModel.OperationContractAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel
+    commentId: T:System.ServiceModel.OperationContractAttribute
+  System.ServiceModel.OperationContractAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.ServiceModel.OperationContractAttribute.#ctor
+        name: OperationContractAttribute
+        nameWithType: OperationContractAttribute.OperationContractAttribute
+        qualifiedName: System.ServiceModel.OperationContractAttribute.OperationContractAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ServiceModel.OperationContractAttribute.#ctor
+        name: OperationContractAttribute
+        nameWithType: OperationContractAttribute.OperationContractAttribute
+        qualifiedName: System.ServiceModel.OperationContractAttribute.OperationContractAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ServiceModel.OperationContractAttribute
+    commentId: M:System.ServiceModel.OperationContractAttribute.#ctor
+  System.ServiceModel.Web:
+    name:
+      CSharp:
+      - name: System.ServiceModel.Web
+        nameWithType: System.ServiceModel.Web
+        qualifiedName: System.ServiceModel.Web
+        isExternal: true
+      VB:
+      - name: System.ServiceModel.Web
+        nameWithType: System.ServiceModel.Web
+        qualifiedName: System.ServiceModel.Web
+    isDefinition: true
+    commentId: N:System.ServiceModel.Web
+  System.ServiceModel.Web.WebInvokeAttribute:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Web.WebInvokeAttribute
+        name: WebInvokeAttribute
+        nameWithType: WebInvokeAttribute
+        qualifiedName: System.ServiceModel.Web.WebInvokeAttribute
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.Web.WebInvokeAttribute
+        name: WebInvokeAttribute
+        nameWithType: WebInvokeAttribute
+        qualifiedName: System.ServiceModel.Web.WebInvokeAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel.Web
+    commentId: T:System.ServiceModel.Web.WebInvokeAttribute
+  System.ServiceModel.Web.WebInvokeAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Web.WebInvokeAttribute.#ctor
+        name: WebInvokeAttribute
+        nameWithType: WebInvokeAttribute.WebInvokeAttribute
+        qualifiedName: System.ServiceModel.Web.WebInvokeAttribute.WebInvokeAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ServiceModel.Web.WebInvokeAttribute.#ctor
+        name: WebInvokeAttribute
+        nameWithType: WebInvokeAttribute.WebInvokeAttribute
+        qualifiedName: System.ServiceModel.Web.WebInvokeAttribute.WebInvokeAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ServiceModel.Web.WebInvokeAttribute
+    commentId: M:System.ServiceModel.Web.WebInvokeAttribute.#ctor
+  System.ServiceModel.Web.WebMessageFormat:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Web.WebMessageFormat
+        name: WebMessageFormat
+        nameWithType: WebMessageFormat
+        qualifiedName: System.ServiceModel.Web.WebMessageFormat
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.Web.WebMessageFormat
+        name: WebMessageFormat
+        nameWithType: WebMessageFormat
+        qualifiedName: System.ServiceModel.Web.WebMessageFormat
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel.Web
+    commentId: T:System.ServiceModel.Web.WebMessageFormat
+  System.ServiceModel.Web.WebMessageBodyStyle:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Web.WebMessageBodyStyle
+        name: WebMessageBodyStyle
+        nameWithType: WebMessageBodyStyle
+        qualifiedName: System.ServiceModel.Web.WebMessageBodyStyle
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.Web.WebMessageBodyStyle
+        name: WebMessageBodyStyle
+        nameWithType: WebMessageBodyStyle
+        qualifiedName: System.ServiceModel.Web.WebMessageBodyStyle
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel.Web
+    commentId: T:System.ServiceModel.Web.WebMessageBodyStyle
+  MicrosftTeams.WebServices.DemoWebService:
+    name:
+      CSharp:
+      - id: MicrosftTeams.WebServices.DemoWebService
+        name: DemoWebService
+        nameWithType: DemoWebService
+        qualifiedName: MicrosftTeams.WebServices.DemoWebService
+      VB:
+      - id: MicrosftTeams.WebServices.DemoWebService
+        name: DemoWebService
+        nameWithType: DemoWebService
+        qualifiedName: MicrosftTeams.WebServices.DemoWebService
+    isDefinition: true
+    commentId: T:MicrosftTeams.WebServices.DemoWebService
+  System.ServiceModel.ServiceContractAttribute:
+    name:
+      CSharp:
+      - id: System.ServiceModel.ServiceContractAttribute
+        name: ServiceContractAttribute
+        nameWithType: ServiceContractAttribute
+        qualifiedName: System.ServiceModel.ServiceContractAttribute
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.ServiceContractAttribute
+        name: ServiceContractAttribute
+        nameWithType: ServiceContractAttribute
+        qualifiedName: System.ServiceModel.ServiceContractAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel
+    commentId: T:System.ServiceModel.ServiceContractAttribute
+  System.ServiceModel.ServiceContractAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.ServiceModel.ServiceContractAttribute.#ctor
+        name: ServiceContractAttribute
+        nameWithType: ServiceContractAttribute.ServiceContractAttribute
+        qualifiedName: System.ServiceModel.ServiceContractAttribute.ServiceContractAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ServiceModel.ServiceContractAttribute.#ctor
+        name: ServiceContractAttribute
+        nameWithType: ServiceContractAttribute.ServiceContractAttribute
+        qualifiedName: System.ServiceModel.ServiceContractAttribute.ServiceContractAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ServiceModel.ServiceContractAttribute
+    commentId: M:System.ServiceModel.ServiceContractAttribute.#ctor
+  System.ServiceModel.Activation:
+    name:
+      CSharp:
+      - name: System.ServiceModel.Activation
+        nameWithType: System.ServiceModel.Activation
+        qualifiedName: System.ServiceModel.Activation
+        isExternal: true
+      VB:
+      - name: System.ServiceModel.Activation
+        nameWithType: System.ServiceModel.Activation
+        qualifiedName: System.ServiceModel.Activation
+    isDefinition: true
+    commentId: N:System.ServiceModel.Activation
+  System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+        name: AspNetCompatibilityRequirementsAttribute
+        nameWithType: AspNetCompatibilityRequirementsAttribute
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+        name: AspNetCompatibilityRequirementsAttribute
+        nameWithType: AspNetCompatibilityRequirementsAttribute
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel.Activation
+    commentId: T:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+  System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor
+        name: AspNetCompatibilityRequirementsAttribute
+        nameWithType: AspNetCompatibilityRequirementsAttribute.AspNetCompatibilityRequirementsAttribute
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.AspNetCompatibilityRequirementsAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor
+        name: AspNetCompatibilityRequirementsAttribute
+        nameWithType: AspNetCompatibilityRequirementsAttribute.AspNetCompatibilityRequirementsAttribute
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.AspNetCompatibilityRequirementsAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute
+    commentId: M:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor
+  System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode:
+    name:
+      CSharp:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        name: AspNetCompatibilityRequirementsMode
+        nameWithType: AspNetCompatibilityRequirementsMode
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        isExternal: true
+      VB:
+      - id: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        name: AspNetCompatibilityRequirementsMode
+        nameWithType: AspNetCompatibilityRequirementsMode
+        qualifiedName: System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+        isExternal: true
+    isDefinition: true
+    parent: System.ServiceModel.Activation
+    commentId: T:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode
+  MicrosftTeams.WebServices:
+    name:
+      CSharp:
+      - name: MicrosftTeams.WebServices
+        nameWithType: MicrosftTeams.WebServices
+        qualifiedName: MicrosftTeams.WebServices
+      VB:
+      - name: MicrosftTeams.WebServices
+        nameWithType: MicrosftTeams.WebServices
+        qualifiedName: MicrosftTeams.WebServices
+    isDefinition: true
+    commentId: N:MicrosftTeams.WebServices
+  System.Web.SessionState:
+    name:
+      CSharp:
+      - name: System.Web.SessionState
+        nameWithType: System.Web.SessionState
+        qualifiedName: System.Web.SessionState
+        isExternal: true
+      VB:
+      - name: System.Web.SessionState
+        nameWithType: System.Web.SessionState
+        qualifiedName: System.Web.SessionState
+    isDefinition: true
+    commentId: N:System.Web.SessionState
+  System.Web.SessionState.IReadOnlySessionState:
+    name:
+      CSharp:
+      - id: System.Web.SessionState.IReadOnlySessionState
+        name: IReadOnlySessionState
+        nameWithType: IReadOnlySessionState
+        qualifiedName: System.Web.SessionState.IReadOnlySessionState
+        isExternal: true
+      VB:
+      - id: System.Web.SessionState.IReadOnlySessionState
+        name: IReadOnlySessionState
+        nameWithType: IReadOnlySessionState
+        qualifiedName: System.Web.SessionState.IReadOnlySessionState
+        isExternal: true
+    isDefinition: true
+    parent: System.Web.SessionState
+    commentId: T:System.Web.SessionState.IReadOnlySessionState
+  System.Web.SessionState.IRequiresSessionState:
+    name:
+      CSharp:
+      - id: System.Web.SessionState.IRequiresSessionState
+        name: IRequiresSessionState
+        nameWithType: IRequiresSessionState
+        qualifiedName: System.Web.SessionState.IRequiresSessionState
+        isExternal: true
+      VB:
+      - id: System.Web.SessionState.IRequiresSessionState
+        name: IRequiresSessionState
+        nameWithType: IRequiresSessionState
+        qualifiedName: System.Web.SessionState.IRequiresSessionState
+        isExternal: true
+    isDefinition: true
+    parent: System.Web.SessionState
+    commentId: T:System.Web.SessionState.IRequiresSessionState
+  MicrosftTeams.WebServices.OAuthHandler:
+    name:
+      CSharp:
+      - name: MicrosftTeams.WebServices.OAuthHandler
+        nameWithType: MicrosftTeams.WebServices.OAuthHandler
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler
+      VB:
+      - name: MicrosftTeams.WebServices.OAuthHandler
+        nameWithType: MicrosftTeams.WebServices.OAuthHandler
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler
+    isDefinition: true
+    commentId: N:MicrosftTeams.WebServices.OAuthHandler
+  MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse:
+    name:
+      CSharp:
+      - id: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+        name: TeamsOAuthResponse
+        nameWithType: TeamsOAuthResponse
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+      VB:
+      - id: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+        name: TeamsOAuthResponse
+        nameWithType: TeamsOAuthResponse
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+    isDefinition: true
+    parent: MicrosftTeams.WebServices.OAuthHandler
+    commentId: T:MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse
+  MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl*:
+    name:
+      CSharp:
+      - id: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl*
+        name: GetLoginUrl
+        nameWithType: OAuthHandlerService.GetLoginUrl
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl
+      VB:
+      - id: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl*
+        name: GetLoginUrl
+        nameWithType: OAuthHandlerService.GetLoginUrl
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl
+    isDefinition: true
+    commentId: Overload:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.GetLoginUrl
+  MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback*:
+    name:
+      CSharp:
+      - id: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback*
+        name: OauthCallback
+        nameWithType: OAuthHandlerService.OauthCallback
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback
+      VB:
+      - id: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback*
+        name: OauthCallback
+        nameWithType: OAuthHandlerService.OauthCallback
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback
+    isDefinition: true
+    commentId: Overload:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService.OauthCallback
+  MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService:
+    name:
+      CSharp:
+      - id: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+        name: OAuthHandlerService
+        nameWithType: OAuthHandlerService
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+      VB:
+      - id: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+        name: OAuthHandlerService
+        nameWithType: OAuthHandlerService
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+    isDefinition: true
+    commentId: T:MicrosftTeams.WebServices.OAuthHandler.OAuthHandlerService
+  Terrasoft.Nui.ServiceModel.DataContract:
+    name:
+      CSharp:
+      - name: Terrasoft.Nui.ServiceModel.DataContract
+        nameWithType: Terrasoft.Nui.ServiceModel.DataContract
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract
+        isExternal: true
+      VB:
+      - name: Terrasoft.Nui.ServiceModel.DataContract
+        nameWithType: Terrasoft.Nui.ServiceModel.DataContract
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract
+    isDefinition: true
+    commentId: N:Terrasoft.Nui.ServiceModel.DataContract
+  Terrasoft.Nui.ServiceModel.DataContract.BaseResponse:
+    name:
+      CSharp:
+      - id: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse
+        name: BaseResponse
+        nameWithType: BaseResponse
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse
+        isExternal: true
+      VB:
+      - id: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse
+        name: BaseResponse
+        nameWithType: BaseResponse
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Nui.ServiceModel.DataContract
+    commentId: T:Terrasoft.Nui.ServiceModel.DataContract.BaseResponse
+  Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.ResponseStatus:
+    name:
+      CSharp:
+      - id: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.ResponseStatus
+        name: ResponseStatus
+        nameWithType: BaseResponse.ResponseStatus
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.ResponseStatus
+        isExternal: true
+      VB:
+      - id: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.ResponseStatus
+        name: ResponseStatus
+        nameWithType: BaseResponse.ResponseStatus
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.ResponseStatus
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse
+    commentId: P:Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.ResponseStatus
+  Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.QueryId:
+    name:
+      CSharp:
+      - id: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.QueryId
+        name: QueryId
+        nameWithType: BaseResponse.QueryId
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.QueryId
+        isExternal: true
+      VB:
+      - id: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.QueryId
+        name: QueryId
+        nameWithType: BaseResponse.QueryId
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.QueryId
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse
+    commentId: P:Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.QueryId
+  Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.RowsAffected:
+    name:
+      CSharp:
+      - id: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.RowsAffected
+        name: RowsAffected
+        nameWithType: BaseResponse.RowsAffected
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.RowsAffected
+        isExternal: true
+      VB:
+      - id: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.RowsAffected
+        name: RowsAffected
+        nameWithType: BaseResponse.RowsAffected
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.RowsAffected
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse
+    commentId: P:Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.RowsAffected
+  Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.NextPrcElReady:
+    name:
+      CSharp:
+      - id: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.NextPrcElReady
+        name: NextPrcElReady
+        nameWithType: BaseResponse.NextPrcElReady
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.NextPrcElReady
+        isExternal: true
+      VB:
+      - id: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.NextPrcElReady
+        name: NextPrcElReady
+        nameWithType: BaseResponse.NextPrcElReady
+        qualifiedName: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.NextPrcElReady
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Nui.ServiceModel.DataContract.BaseResponse
+    commentId: P:Terrasoft.Nui.ServiceModel.DataContract.BaseResponse.NextPrcElReady
+  Terrasoft.Core.ServiceModelContract:
+    name:
+      CSharp:
+      - name: Terrasoft.Core.ServiceModelContract
+        nameWithType: Terrasoft.Core.ServiceModelContract
+        qualifiedName: Terrasoft.Core.ServiceModelContract
+        isExternal: true
+      VB:
+      - name: Terrasoft.Core.ServiceModelContract
+        nameWithType: Terrasoft.Core.ServiceModelContract
+        qualifiedName: Terrasoft.Core.ServiceModelContract
+    isDefinition: true
+    commentId: N:Terrasoft.Core.ServiceModelContract
+  Terrasoft.Core.ServiceModelContract.BaseResponse:
+    name:
+      CSharp:
+      - id: Terrasoft.Core.ServiceModelContract.BaseResponse
+        name: BaseResponse
+        nameWithType: BaseResponse
+        qualifiedName: Terrasoft.Core.ServiceModelContract.BaseResponse
+        isExternal: true
+      VB:
+      - id: Terrasoft.Core.ServiceModelContract.BaseResponse
+        name: BaseResponse
+        nameWithType: BaseResponse
+        qualifiedName: Terrasoft.Core.ServiceModelContract.BaseResponse
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Core.ServiceModelContract
+    commentId: T:Terrasoft.Core.ServiceModelContract.BaseResponse
+  Terrasoft.Core.ServiceModelContract.BaseResponse.Success:
+    name:
+      CSharp:
+      - id: Terrasoft.Core.ServiceModelContract.BaseResponse.Success
+        name: Success
+        nameWithType: BaseResponse.Success
+        qualifiedName: Terrasoft.Core.ServiceModelContract.BaseResponse.Success
+        isExternal: true
+      VB:
+      - id: Terrasoft.Core.ServiceModelContract.BaseResponse.Success
+        name: Success
+        nameWithType: BaseResponse.Success
+        qualifiedName: Terrasoft.Core.ServiceModelContract.BaseResponse.Success
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Core.ServiceModelContract.BaseResponse
+    commentId: P:Terrasoft.Core.ServiceModelContract.BaseResponse.Success
+  Terrasoft.Core.ServiceModelContract.BaseResponse.ErrorInfo:
+    name:
+      CSharp:
+      - id: Terrasoft.Core.ServiceModelContract.BaseResponse.ErrorInfo
+        name: ErrorInfo
+        nameWithType: BaseResponse.ErrorInfo
+        qualifiedName: Terrasoft.Core.ServiceModelContract.BaseResponse.ErrorInfo
+        isExternal: true
+      VB:
+      - id: Terrasoft.Core.ServiceModelContract.BaseResponse.ErrorInfo
+        name: ErrorInfo
+        nameWithType: BaseResponse.ErrorInfo
+        qualifiedName: Terrasoft.Core.ServiceModelContract.BaseResponse.ErrorInfo
+        isExternal: true
+    isDefinition: true
+    parent: Terrasoft.Core.ServiceModelContract.BaseResponse
+    commentId: P:Terrasoft.Core.ServiceModelContract.BaseResponse.ErrorInfo
+  ServiceStack.ServiceInterface.ServiceModel.IHasResponseStatus:
+    name:
+      CSharp:
+      - id: ServiceStack.ServiceInterface.ServiceModel.IHasResponseStatus
+        name: IHasResponseStatus
+        nameWithType: IHasResponseStatus
+        qualifiedName: ServiceStack.ServiceInterface.ServiceModel.IHasResponseStatus
+        isExternal: true
+      VB:
+      - id: ServiceStack.ServiceInterface.ServiceModel.IHasResponseStatus
+        name: IHasResponseStatus
+        nameWithType: IHasResponseStatus
+        qualifiedName: ServiceStack.ServiceInterface.ServiceModel.IHasResponseStatus
+        isExternal: true
+    isDefinition: true
+    commentId: '!:ServiceStack.ServiceInterface.ServiceModel.IHasResponseStatus'
+  MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl*:
+    name:
+      CSharp:
+      - id: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl*
+        name: LoginUrl
+        nameWithType: TeamsOAuthResponse.LoginUrl
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+      VB:
+      - id: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl*
+        name: LoginUrl
+        nameWithType: TeamsOAuthResponse.LoginUrl
+        qualifiedName: MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+    isDefinition: true
+    commentId: Overload:MicrosftTeams.WebServices.OAuthHandler.TeamsOAuthResponse.LoginUrl
+  System.Runtime.Serialization:
+    name:
+      CSharp:
+      - name: System.Runtime.Serialization
+        nameWithType: System.Runtime.Serialization
+        qualifiedName: System.Runtime.Serialization
+        isExternal: true
+      VB:
+      - name: System.Runtime.Serialization
+        nameWithType: System.Runtime.Serialization
+        qualifiedName: System.Runtime.Serialization
+    isDefinition: true
+    commentId: N:System.Runtime.Serialization
+  System.Runtime.Serialization.DataMemberAttribute:
+    name:
+      CSharp:
+      - id: System.Runtime.Serialization.DataMemberAttribute
+        name: DataMemberAttribute
+        nameWithType: DataMemberAttribute
+        qualifiedName: System.Runtime.Serialization.DataMemberAttribute
+        isExternal: true
+      VB:
+      - id: System.Runtime.Serialization.DataMemberAttribute
+        name: DataMemberAttribute
+        nameWithType: DataMemberAttribute
+        qualifiedName: System.Runtime.Serialization.DataMemberAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System.Runtime.Serialization
+    commentId: T:System.Runtime.Serialization.DataMemberAttribute
+  System.Runtime.Serialization.DataMemberAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.Runtime.Serialization.DataMemberAttribute.#ctor
+        name: DataMemberAttribute
+        nameWithType: DataMemberAttribute.DataMemberAttribute
+        qualifiedName: System.Runtime.Serialization.DataMemberAttribute.DataMemberAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Runtime.Serialization.DataMemberAttribute.#ctor
+        name: DataMemberAttribute
+        nameWithType: DataMemberAttribute.DataMemberAttribute
+        qualifiedName: System.Runtime.Serialization.DataMemberAttribute.DataMemberAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Runtime.Serialization.DataMemberAttribute
+    commentId: M:System.Runtime.Serialization.DataMemberAttribute.#ctor
+  System.Runtime.Serialization.DataContractAttribute:
+    name:
+      CSharp:
+      - id: System.Runtime.Serialization.DataContractAttribute
+        name: DataContractAttribute
+        nameWithType: DataContractAttribute
+        qualifiedName: System.Runtime.Serialization.DataContractAttribute
+        isExternal: true
+      VB:
+      - id: System.Runtime.Serialization.DataContractAttribute
+        name: DataContractAttribute
+        nameWithType: DataContractAttribute
+        qualifiedName: System.Runtime.Serialization.DataContractAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System.Runtime.Serialization
+    commentId: T:System.Runtime.Serialization.DataContractAttribute
+  System.Runtime.Serialization.DataContractAttribute.#ctor:
+    name:
+      CSharp:
+      - id: System.Runtime.Serialization.DataContractAttribute.#ctor
+        name: DataContractAttribute
+        nameWithType: DataContractAttribute.DataContractAttribute
+        qualifiedName: System.Runtime.Serialization.DataContractAttribute.DataContractAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.Runtime.Serialization.DataContractAttribute.#ctor
+        name: DataContractAttribute
+        nameWithType: DataContractAttribute.DataContractAttribute
+        qualifiedName: System.Runtime.Serialization.DataContractAttribute.DataContractAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Runtime.Serialization.DataContractAttribute
+    commentId: M:System.Runtime.Serialization.DataContractAttribute.#ctor

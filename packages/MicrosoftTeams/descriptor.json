@@ -1,0 +1,22 @@
+﻿{
+  "Descriptor": {
+    "UId": "f68c5687-0d97-4a3e-a390-157730d468af",
+    "Name": "MicrosoftTeams",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1654404536000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/MicrosoftTeams.csproj",
+    "DependsOn": [
+      {
+        "UId": "613fd913-be03-46ce-909b-f44e4225469e",
+        "PackageVersion": "7.8.0",
+        "Name": "UIv2"
+      },
+      {
+        "UId": "90f7bc4e-bfce-44f6-99ce-41d02274d4f5",
+        "PackageVersion": "7.8.0",
+        "Name": "OAuth20Integration"
+      }
+    ]
+  }
+}

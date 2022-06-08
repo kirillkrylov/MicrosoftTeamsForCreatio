@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.TeamsJoinUrl.Caption" Value="Microsoft Teams JoinUrl" />
+			<Item Name="Columns.TeamsMeetingId.Caption" Value="Microsoft Teams MeetingId" />
+		</Items>
+	</Group>
+</Resources>

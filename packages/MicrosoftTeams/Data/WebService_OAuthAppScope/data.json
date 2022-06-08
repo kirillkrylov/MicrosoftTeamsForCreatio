@@ -1,0 +1,89 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "03f64937-974e-4a34-a72f-d2494a25e8f7"
+        },
+        {
+          "SchemaColumnUId": "7b3cf478-bbd0-49f7-88a7-579296db059c",
+          "Value": "f7f273d2-680a-45d1-b6e5-fbe2e55698aa",
+          "DisplayValue": "Microsoft Graph"
+        },
+        {
+          "SchemaColumnUId": "d6994fc3-772f-4f48-9e65-62d864f72610",
+          "Value": "OnlineMeetingArtifact.Read.All"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "6c6126a1-9dcd-4436-8f4c-518dbfe5bef7"
+        },
+        {
+          "SchemaColumnUId": "7b3cf478-bbd0-49f7-88a7-579296db059c",
+          "Value": "f7f273d2-680a-45d1-b6e5-fbe2e55698aa",
+          "DisplayValue": "Microsoft Graph"
+        },
+        {
+          "SchemaColumnUId": "d6994fc3-772f-4f48-9e65-62d864f72610",
+          "Value": "offline_access"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "7bbd115b-845c-432d-8115-abf77d978508"
+        },
+        {
+          "SchemaColumnUId": "7b3cf478-bbd0-49f7-88a7-579296db059c",
+          "Value": "f7f273d2-680a-45d1-b6e5-fbe2e55698aa",
+          "DisplayValue": "Microsoft Graph"
+        },
+        {
+          "SchemaColumnUId": "d6994fc3-772f-4f48-9e65-62d864f72610",
+          "Value": "User.Read"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "c6b56eeb-4870-4de7-a700-99572a381a9d"
+        },
+        {
+          "SchemaColumnUId": "7b3cf478-bbd0-49f7-88a7-579296db059c",
+          "Value": "f7f273d2-680a-45d1-b6e5-fbe2e55698aa",
+          "DisplayValue": "Microsoft Graph"
+        },
+        {
+          "SchemaColumnUId": "d6994fc3-772f-4f48-9e65-62d864f72610",
+          "Value": "OnlineMeetings.ReadWrite"
+        }
+      ]
+    },
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "e5e128e9-9a48-45ae-9fa3-fbb66abc35cc"
+        },
+        {
+          "SchemaColumnUId": "7b3cf478-bbd0-49f7-88a7-579296db059c",
+          "Value": "f7f273d2-680a-45d1-b6e5-fbe2e55698aa",
+          "DisplayValue": "Microsoft Graph"
+        },
+        {
+          "SchemaColumnUId": "d6994fc3-772f-4f48-9e65-62d864f72610",
+          "Value": "Calendars.ReadWrite"
+        }
+      ]
+    }
+  ]
+}
