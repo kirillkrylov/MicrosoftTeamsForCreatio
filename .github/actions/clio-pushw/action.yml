@@ -15,7 +15,7 @@ inputs:
 runs: 
   using: "composite"
   steps:
-    - run: dotnet tool install clio --tool-path $rootDir\ClioTool;
+    - run: dotnet tool install clio --tool-path .\ClioTool;
       shell: powershell
     - run: Write-Host "Attempting to install push to " ${{ inputs.url }}
       shell: powershell
