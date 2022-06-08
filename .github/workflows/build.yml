@@ -81,6 +81,6 @@ jobs:
         run: |
           $rootDir = Get-Location;
           dotnet tool install clio --tool-path $rootDir\ClioTool
-          .\ClioTool\clio.exe push-workspace clio pushw -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
+          .\ClioTool\clio.exe push-workspace -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
           .\ClioTool\clio.exe -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
           .\ClioTool\clio.exe -u "${{ secrets.PROD_URL }}" -l "${{ secrets.PROD_LOGIN }}" -p "${{ secrets.PROD_PASSWORD }}";
