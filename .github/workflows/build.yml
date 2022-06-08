@@ -61,6 +61,6 @@ jobs:
             /d:sonar.host.url="https://sonarcloud.io" `
             /d:sonar.exclusions=**/Documentation/**/* `
             /d:sonar.coverage.exclusions=**/EventListener/*,**/MsGraph/* `
-            /d:sonar.cs.opencover.reportsPaths=".\..\TestResults\**\coverage.opencover*.xml" `
+            /d:sonar.cs.opencover.reportsPaths=".\..\TestResults\**\coverage.opencover*.xml";
           dotnet build;
           .\..\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
